@@ -5,3 +5,9 @@ console.log("Jonas");
 console.log(23);
 
 let firstName = "Jonas";
+let first = "jonas";
+let firstNamePerson;
+
+console.log(firstName);
+console.log(firstName);
+console.log(firstName);
