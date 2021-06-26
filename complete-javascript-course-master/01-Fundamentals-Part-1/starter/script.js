@@ -20,3 +20,5 @@ let job2 = "teacher";
 // Primitive data types
 
 // Number: Floating point numbers - used for decimals and integers : let age = 23;
+
+// string: sequence of characters - used for text let firstName = 'Jonas'; - always in quotes
