@@ -31,3 +31,5 @@ let job2 = "teacher";
 // Null : also means 'empty value'
 
 // Symbol - value that is unique and cannot be changed- not useful for us
+
+// BigInt : larger integers than the number type can hold
