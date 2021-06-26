@@ -27,3 +27,5 @@ let job2 = "teacher";
 // Boolean: logical type that can only be true or false - used for taking decisions let fullAge = true;
 
 // Undefined : value taken by a variable that is not yet defined ('empty value')   let children;
+
+// Null : also means 'empty value'
