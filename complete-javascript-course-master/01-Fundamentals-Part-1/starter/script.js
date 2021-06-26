@@ -16,3 +16,7 @@ let myCurrentJob = "Teacher";
 
 let job1 = "programmer";
 let job2 = "teacher";
+
+// Primitive data types
+
+// Number: Floating point numbers - used for decimals and integers : let age = 23;
