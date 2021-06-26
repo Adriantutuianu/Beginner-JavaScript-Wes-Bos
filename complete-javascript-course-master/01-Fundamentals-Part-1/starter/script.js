@@ -29,3 +29,5 @@ let job2 = "teacher";
 // Undefined : value taken by a variable that is not yet defined ('empty value')   let children;
 
 // Null : also means 'empty value'
+
+// Symbol - value that is unique and cannot be changed- not useful for us
