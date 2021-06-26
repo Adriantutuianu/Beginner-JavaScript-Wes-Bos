@@ -18,9 +18,12 @@ let job1 = "programmer";
 let job2 = "teacher";
 
 // Primitive data types
+// numbers , string , boolean - them ost important ones
 
 // Number: Floating point numbers - used for decimals and integers : let age = 23;
 
 // string: sequence of characters - used for text let firstName = 'Jonas'; - always in quotes
 
 // Boolean: logical type that can only be true or false - used for taking decisions let fullAge = true;
+
+// Undefined : value taken by a variable that is not yet defined ('empty value')   let children;
