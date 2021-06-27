@@ -48,3 +48,10 @@ console.log(typeof true);
 console.log(typeof javaScriptisFun);
 console.log(typeof 23);
 console.log(typeof "Jonas");
+
+// Only first time when you tipe a var it is necessary to type it.
+javaScriptisFun = "YES!";
+console.log(typeof javaScriptisFun);
+
+let year;
+console.log(year);
