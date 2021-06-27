@@ -1,3 +1,4 @@
+/*
 let js = "amazing";
 console.log(40 + 8 + 23 - 10);
 
@@ -37,4 +38,5 @@ console.log(myFirstJob);
 // BigInt : larger integers than the number type can hold
 
 
-/* .... */ -multi line comment 
+ -multi line comment 
+*/
