@@ -43,3 +43,8 @@ console.log(myFirstJob);
 
 let javaScriptisFun = true;
 console.log(javaScriptisFun);
+
+console.log(typeof true);
+console.log(typeof javaScriptisFun);
+console.log(typeof 23);
+console.log(typeof "Jonas");
