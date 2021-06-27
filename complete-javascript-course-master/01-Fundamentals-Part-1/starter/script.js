@@ -17,8 +17,10 @@ let myCurrentJob = "Teacher";
 let job1 = "programmer";
 let job2 = "teacher";
 
+console.log(myFirstJob);
+
 // Primitive data types
-// numbers , string , boolean - them ost important ones
+// numbers , string , boolean - the most important ones
 
 // Number: Floating point numbers - used for decimals and integers : let age = 23;
 
@@ -33,3 +35,6 @@ let job2 = "teacher";
 // Symbol - value that is unique and cannot be changed- not useful for us
 
 // BigInt : larger integers than the number type can hold
+
+
+/* .... */ -multi line comment 
