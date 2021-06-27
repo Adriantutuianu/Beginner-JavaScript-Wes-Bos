@@ -40,3 +40,6 @@ console.log(myFirstJob);
 
  -multi line comment 
 */
+
+let javaScriptisFun = true;
+console.log(javaScriptisFun);
