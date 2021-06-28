@@ -61,8 +61,13 @@ year = 1991;
 console.log(typeof year);
 */
 
+// I can use let when the value need to be changed at some point in the future
 let age = 30;
 age = 31;
 
 // the value of a variable const cannot be changed
 const birthYear = 1991;
+
+// var is the old way to define variable prior to es06
+var job = "programmer";
+job = "programmer";
