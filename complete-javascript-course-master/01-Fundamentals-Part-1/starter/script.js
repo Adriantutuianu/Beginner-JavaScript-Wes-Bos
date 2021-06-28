@@ -59,7 +59,7 @@ console.log(typeof year);
 
 year = 1991;
 console.log(typeof year);
-*/
+
 
 // I can use let when the value need to be changed at some point in the future
 let age = 30;
@@ -77,3 +77,11 @@ console.log(job);
 // Is working without let const or var
 lastName = "Schmedtmann";
 console.log(lastName);
+*/
+
+// Basic operators
+
+// Minus
+const ageJonas = 2037 - 1991;
+const ageSarah = 2037 - 2018;
+console.log(ageJonas, ageSarah);
