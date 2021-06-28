@@ -70,4 +70,10 @@ const birthYear = 1991;
 
 // var is the old way to define variable prior to es06
 var job = "programmer";
-job = "programmer";
+job = "teacher";
+// var is very similar with let
+console.log(job);
+
+// Is working without let const or var
+lastName = "Schmedtmann";
+console.log(lastName);
