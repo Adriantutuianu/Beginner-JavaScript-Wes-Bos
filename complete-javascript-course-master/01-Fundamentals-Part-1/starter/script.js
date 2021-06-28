@@ -39,7 +39,7 @@ console.log(myFirstJob);
 
 
  -multi line comment 
-*/
+
 
 let javaScriptisFun = true;
 console.log(javaScriptisFun);
@@ -59,3 +59,10 @@ console.log(typeof year);
 
 year = 1991;
 console.log(typeof year);
+*/
+
+let age = 30;
+age = 31;
+
+// the value of a variable const cannot be changed
+const birthYear = 1991;
