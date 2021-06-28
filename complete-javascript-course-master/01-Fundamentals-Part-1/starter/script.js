@@ -94,7 +94,8 @@ const firstName = "Jonas";
 const lastName = "Schmedtmann";
 console.log(firstName + " " + lastName);
 
-// Asignment operators
+// Assignment operators
 
-let x = 10 + 5;
+let x = 10 + 5; // 15
+x += 10; // x = x + 10
 console.log(x);
