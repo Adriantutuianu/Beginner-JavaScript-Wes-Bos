@@ -191,3 +191,7 @@ console.log(`Just a regular string...`);
 console.log("String with \n\
 multiple \n\
 lines");
+// after es6- this is cleaner- this is the one that we use
+console.log(`String
+multiple
+lines`);
