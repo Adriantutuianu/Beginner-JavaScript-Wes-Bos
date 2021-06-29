@@ -144,7 +144,7 @@ m tall.
 § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
 m tall.
 GOOD LUCK � 
-*/
+
 // // 1
 const massMark = 78;
 const heightMark = 1.69;
@@ -166,3 +166,16 @@ console.log(BMIMark, BMIJohn);
 //3
 const markHigherBMI = BMIMark > BMIJohn;
 console.log(markHigherBMI);
+*/
+
+// Strings and template Literals
+
+const firstName = "Jonas";
+const job = "teacher";
+const birthYear = 1991;
+const year = 2037;
+
+//  I'm Jonas, a 46 years old teacher!
+const jonas =
+  "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
+console.log(jonas);
