@@ -145,12 +145,19 @@ m tall.
 m tall.
 GOOD LUCK � 
 */
-// 1
+// // 1
 const massMark = 78;
 const heightMark = 1.69;
 const massJohn = 92;
 const heightJohn = 1.95;
 
+// When I change the numbers - is changing all the results
+
+// 1
+// const massMark = 95;
+// const heightMark = 1.88;
+// const massJohn = 85;
+// const heightJohn = 1.76;
 // 2
 const BMIMark = massMark / heightMark ** 2;
 const BMIJohn = massJohn / heightJohn ** 2;
