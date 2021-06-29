@@ -185,3 +185,9 @@ console.log(jonasNew);
 
 // any regular string we can write like that:
 console.log(`Just a regular string...`);
+
+// Multi line strings
+// before es6 :
+console.log("String with \n\
+multiple \n\
+lines");
