@@ -182,3 +182,6 @@ console.log(jonas);
 // similar and quicker we can write :
 const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}`;
 console.log(jonasNew);
+
+// any regular string we can write like that:
+console.log(`Just a regular string...`);
