@@ -276,3 +276,4 @@ console.log(String(23));
 
 // type coercion- happens whenever an opeartor is dealing with 2 values with 2 different types
 console.log("I am " + 23 + " years old");
+console.log("23" - "10" - 3); //javascript converts string to numbers automatic
