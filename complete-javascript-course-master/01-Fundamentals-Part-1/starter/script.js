@@ -279,3 +279,7 @@ console.log("I am " + 23 + " years old");
 console.log("23" - "10" - 3); //javascript converts string to numbers automatic
 console.log("23" * "2");
 console.log("23" > "18");
+
+let n = "1" + 1; //11- result
+n = n - 1;
+console.log(n); // console result 10
