@@ -153,12 +153,12 @@ const heightJohn = 1.95;
 
 // When I change the numbers - is changing all the results
 
-// 1
-// const massMark = 95;
-// const heightMark = 1.88;
-// const massJohn = 85;
-// const heightJohn = 1.76;
-// 2
+1;
+const massMark = 95;
+const heightMark = 1.88;
+const massJohn = 85;
+const heightJohn = 1.76;
+2;
 const BMIMark = massMark / heightMark ** 2;
 const BMIJohn = massJohn / heightJohn ** 2;
 console.log(BMIMark, BMIJohn);
@@ -166,22 +166,35 @@ console.log(BMIMark, BMIJohn);
 //3
 const markHigherBMI = BMIMark > BMIJohn;
 console.log(markHigherBMI);
-*/
 
 // Strings and template Literals
 
-const firstName = "Jonas";
-const job = "teacher";
-const birthYear = 1991;
-const year = 2037;
+// const firstName = "Jonas";
+// const job = "teacher";
+// const birthYear = 1991;
+// const year = 2037;
 
-//  I'm Jonas, a 46 years old teacher!
-const jonas =
-  "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
-console.log(jonas);
-// similar and quicker we can write :
-const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}`;
-console.log(jonasNew);
+// //  I'm Jonas, a 46 years old teacher!
+// const jonas =
+//   "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
+// console.log(jonas);
+// // similar and quicker we can write :
+// const jonasNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}`;
+// console.log(jonasNew);
+
+// Ex mentor:
+
+const firstName = "Stefan";
+const job = "web developer";
+const relation = "my brother";
+const birthYear = 1989;
+const year = 2021;
+
+// Stefan is 32 years old, web developer, my brother and my mentor.
+const stefan = `${firstName} is ${
+  year - birthYear
+} years old,  ${job}, ${relation} and my mentor.`;
+console.log(stefan);
 
 // any regular string we can write like that:
 console.log(`Just a regular string...`);
@@ -195,3 +208,11 @@ lines");
 console.log(`String
 multiple
 lines`);
+*/
+
+const age = 19;
+const isOldEnough = age >= 18;
+
+if (isOldEnough) {
+  console.log("Sarah can start driving licence🚗");
+}
