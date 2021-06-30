@@ -264,5 +264,8 @@ console.log(BMIValue);
 // Type conversion and coercion
 
 const inputYear = "1991"; //incorect - string should be number (without"")
-console.log(Number(inputYear));
-console.log(inputYear + 18);
+console.log(Number(inputYear)); //convert string to number
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Jonas")); //NaN - not a number- invalid number.
+console.log(typeof NaN);
