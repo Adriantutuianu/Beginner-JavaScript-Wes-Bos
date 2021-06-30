@@ -269,3 +269,7 @@ console.log(Number(inputYear) + 18);
 
 console.log(Number("Jonas")); //NaN - not a number- invalid number.
 console.log(typeof NaN);
+
+// convert number to string
+
+console.log(String(23));
