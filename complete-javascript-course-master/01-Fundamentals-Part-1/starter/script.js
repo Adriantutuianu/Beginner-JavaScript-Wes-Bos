@@ -240,9 +240,9 @@ is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark
 BMI (28.3) is higher than John's (23.9)!"
 Hint: Use an if/else statement 😉
 
-*/
+
 // 1
-const massMark = 78;
+const massMark = 79;
 const heightMark = 1.69;
 const massJohn = 92;
 const heightJohn = 1.95;
@@ -257,5 +257,12 @@ if (BMIMark > BMIJohn) {
   console.log("John's BMI is higher than Mark's!");
 }
 // 2
-const BMIValue = `Mark's BMI (${BMIMark}) is higher than John ( ${BMIJohn}) !`;
+const BMIValue = `Mark's BMI (${BMIMark}) is higher than John's ( ${BMIJohn})!`;
 console.log(BMIValue);
+*/
+
+// Type conversion and coercion
+
+const inputYear = "1991"; //incorect - string should be number (without"")
+console.log(Number(inputYear));
+console.log(inputYear + 18);
