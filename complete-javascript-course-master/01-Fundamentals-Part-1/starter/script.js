@@ -261,7 +261,7 @@ const BMIValue = `Mark's BMI (${BMIMark}) is higher than John's ( ${BMIJohn})!`;
 console.log(BMIValue);
 */
 
-// Type conversion and coercion
+// Type conversion
 
 const inputYear = "1991"; //incorect - string should be number (without"")
 console.log(Number(inputYear)); //convert string to number
@@ -273,3 +273,6 @@ console.log(typeof NaN);
 // convert number to string
 
 console.log(String(23));
+
+// type coercion- happens whenever an opeartor is dealing with 2 values with 2 different types
+console.log("I am " + 23 + " years old");
