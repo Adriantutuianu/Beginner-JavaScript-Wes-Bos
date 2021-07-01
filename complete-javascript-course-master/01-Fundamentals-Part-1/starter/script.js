@@ -355,3 +355,6 @@ if (favourite !== 23) console.log("why not 23?");
 
 // or operator
 // a or b  - the result is true when one or both are true
+
+// not operator
+// not a, not b - inverts true/false value
