@@ -346,7 +346,7 @@ if (favourite === 23) {
 
 // different operator
 if (favourite !== 23) console.log("why not 23?");
-*/
+
 
 //Boolean logic: and , or & not operators
 
@@ -358,3 +358,9 @@ if (favourite !== 23) console.log("why not 23?");
 
 // not operator
 // not a, not b - inverts true/false value
+*/
+
+const hasDriversLicence = true; //A
+const hasGoodVision = true; //B
+
+console.log(hasDriversLicence && hasGoodVision); //and operator
