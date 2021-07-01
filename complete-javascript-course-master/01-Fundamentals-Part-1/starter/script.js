@@ -328,3 +328,6 @@ console.log("18" == 18); //true
 console.log("18" === 18); // false
 
 if (age == 18) console.log("You just become an adult!(loose)");
+
+const favourite = prompt("What is your favourite number?");
+console.log(favourite);
