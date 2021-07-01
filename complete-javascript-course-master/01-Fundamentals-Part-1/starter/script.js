@@ -312,7 +312,7 @@ if (height) {
 } else {
   console.log("Height is UNDEFINED");
 }
-*/
+
 
 // Equality operators :
 
@@ -346,3 +346,9 @@ if (favourite === 23) {
 
 // different operator
 if (favourite !== 23) console.log("why not 23?");
+*/
+
+//Boolean logic: and , or & not operators
+
+// and operator
+// a and b - the result is true only when both are true.
