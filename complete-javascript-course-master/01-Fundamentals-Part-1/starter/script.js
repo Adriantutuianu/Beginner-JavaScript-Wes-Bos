@@ -318,4 +318,13 @@ if (height) {
 
 const age = 18;
 if (age === 18) console.log("You just become an adult!");
-//triple === - to check
+// === - to check - strict equality operator
+
+console.log(18 === 18); // true
+console.log(18 === 19); // false
+
+// == - loose equality operator
+console.log("18" == 18); //true
+console.log("18" === 18); // false
+
+if (age == 18) console.log("You just become an adult!(loose)");
