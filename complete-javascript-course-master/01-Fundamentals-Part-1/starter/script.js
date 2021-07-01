@@ -285,9 +285,17 @@ n = n - 1;
 console.log(n); // console result 10
 */
 
-// 5 falsy values: 0, " ", undefined, null , NaN
+// 5 falsy values: 0, '' , undefined, null , NaN
 
 console.log(Boolean(0));
 console.log(Boolean(undefined));
 console.log(Boolean("Jonas"));
 console.log(Boolean({})); //empty object{}
+console.log(Boolean(""));
+
+const money = 0; // 0 is a falsy value - console - else
+if (money) {
+  console.log("don't spend it all");
+} else {
+  console.log("You should get a job!");
+}
