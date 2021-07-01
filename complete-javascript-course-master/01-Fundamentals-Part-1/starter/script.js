@@ -299,3 +299,16 @@ if (money) {
 } else {
   console.log("You should get a job!");
 }
+
+// let height;
+// if (height) {
+//   console.log("YAY! Height is defined");
+// } else {
+//   console.log("Height is UNDEFINED"); //console - else
+
+let height = 123;
+if (height) {
+  console.log("YAY! Height is defined");
+} else {
+  console.log("Height is UNDEFINED");
+}
