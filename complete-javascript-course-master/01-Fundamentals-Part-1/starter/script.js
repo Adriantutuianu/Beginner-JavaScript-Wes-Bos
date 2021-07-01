@@ -365,3 +365,4 @@ const hasGoodVision = false; //B
 
 console.log(hasDriversLicence && hasGoodVision); //and operator
 console.log(hasDriversLicence || hasGoodVision); //or operator
+console.log(!hasDriversLicence); //not operator
