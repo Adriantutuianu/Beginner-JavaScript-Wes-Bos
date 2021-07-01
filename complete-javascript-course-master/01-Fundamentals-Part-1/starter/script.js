@@ -361,6 +361,7 @@ if (favourite !== 23) console.log("why not 23?");
 */
 
 const hasDriversLicence = true; //A
-const hasGoodVision = true; //B
+const hasGoodVision = false; //B
 
 console.log(hasDriversLicence && hasGoodVision); //and operator
+console.log(hasDriversLicence || hasGoodVision); //or operator
