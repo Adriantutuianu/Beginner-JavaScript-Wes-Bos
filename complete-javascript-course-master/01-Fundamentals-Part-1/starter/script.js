@@ -366,3 +366,14 @@ const hasGoodVision = false; //B
 console.log(hasDriversLicence && hasGoodVision); //and operator
 console.log(hasDriversLicence || hasGoodVision); //or operator
 console.log(!hasDriversLicence); //not operator
+
+const shouldDrive = hasDriversLicence && hasGoodVision;
+
+if (shouldDrive) {
+  console.log("Sarah is able to drive!");
+} else {
+  console.log("Someone else should drive...");
+}
+
+const isTired = true; //c
+console.log(hasDriversLicence || hasGoodVision || isTired); //or operator
