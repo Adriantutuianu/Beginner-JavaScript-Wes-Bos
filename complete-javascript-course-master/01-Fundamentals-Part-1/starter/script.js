@@ -259,7 +259,7 @@ if (BMIMark > BMIJohn) {
 // 2
 const BMIValue = `Mark's BMI (${BMIMark}) is higher than John's ( ${BMIJohn})!`;
 console.log(BMIValue);
-*/
+
 
 // Type conversion
 
@@ -283,3 +283,6 @@ console.log("23" > "18");
 let n = "1" + 1; //11- result
 n = n - 1;
 console.log(n); // console result 10
+*/
+
+5 falsy values: 0, "", undefined, null , NaN 
