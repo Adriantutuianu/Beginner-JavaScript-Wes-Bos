@@ -431,7 +431,11 @@ if (day === "monday") {
 */
 
 //Statement and expresions
-
+// statements are full sentences that translate or actions.
 3 + 4; // this is an expresion because it does produce value
 1991; // expresion as well
 true && false && !false; //expresion- boolean value
+
+if (23 > 10) {
+  const str = "23 is bigger"; //no value produced
+}
