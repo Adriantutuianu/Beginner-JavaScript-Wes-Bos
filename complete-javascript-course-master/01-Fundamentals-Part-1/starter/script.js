@@ -347,7 +347,7 @@ if (favourite === 23) {
 // different operator
 if (favourite !== 23) console.log("why not 23?");
 
-
+//logical operator
 //Boolean logic: and , or & not operators
 
 // and operator
@@ -387,13 +387,13 @@ if (hasDriversLicence && hasGoodVision && !isTired) {
 
 // The switch statement
 
-const day = "monday";
+const day = "friday";
 
 switch (day) {
   case "monday": //day === 'monday'
     console.log("plan course structure");
     console.log("go to coding meetup");
-    break;
+    break; // without the break code continue to execute.
   case "tuesday":
     console.log("prepare theory videos");
     break;
@@ -410,4 +410,20 @@ switch (day) {
     break;
   default:
     console.log("not a valid day!");
+}
+
+//if - else alternative
+if (day === "monday") {
+  console.log("plan course structure");
+  console.log("go to coding meetup");
+} else if (day === "tuesday") {
+  console.log("prepare theory videos");
+} else if (day === "wednesday" || day === "thursday") {
+  console.log("write code examples");
+} else if (day === "friday") {
+  console.log("record videos");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("enjoy the weekend!");
+} else {
+  console.log("not a valid day!");
 }
