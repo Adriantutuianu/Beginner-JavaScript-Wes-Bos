@@ -358,10 +358,10 @@ if (favourite !== 23) console.log("why not 23?");
 
 // not operator
 // not a, not b - inverts true/false value
-*/
+
 
 const hasDriversLicence = true; //A
-const hasGoodVision = false; //B
+const hasGoodVision = true; //B
 
 console.log(hasDriversLicence && hasGoodVision); //and operator
 console.log(hasDriversLicence || hasGoodVision); //or operator
@@ -369,11 +369,45 @@ console.log(!hasDriversLicence); //not operator
 
 const shouldDrive = hasDriversLicence && hasGoodVision;
 
-if (shouldDrive) {
+// if (shouldDrive) {
+//   console.log("Sarah is able to drive!");
+// } else {
+//   console.log("Someone else should drive...");
+// }
+
+const isTired = false; //c
+console.log(hasDriversLicence || hasGoodVision || isTired); //or operator
+
+if (hasDriversLicence && hasGoodVision && !isTired) {
   console.log("Sarah is able to drive!");
 } else {
   console.log("Someone else should drive...");
 }
+*/
 
-const isTired = true; //c
-console.log(hasDriversLicence || hasGoodVision || isTired); //or operator
+// The switch statement
+
+const day = "monday";
+
+switch (day) {
+  case "monday": //day === 'monday'
+    console.log("plan course structure");
+    console.log("go to coding meetup");
+    break;
+  case "tuesday":
+    console.log("prepare theory videos");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("write code examples");
+    break;
+  case "friday":
+    console.log("record videos");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("enjoy the weekend!");
+    break;
+  default:
+    console.log("not a valid day!");
+}
