@@ -406,14 +406,27 @@ Test data:
 § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 */
 //1
-const scoreDolphins = (96 + 108 + 89) / 3;
-const scoreKoalas = (96 + 108 + 89) / 3;
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKoalas = (96 + 108 + 89) / 3;
+// console.log(scoreDolphins, scoreKoalas);
+
+// // 2
+// if (scoreDolphins > scoreKoalas) {
+//   console.log("Dolphins wins!");
+// } else if (scoreKoalas > scoreDolphins) {
+//   console.log("Koalas wins!");
+// } else if (scoreDolphins === scoreKoalas) {
+//   console.log("draw!");
+// }
+
+// bonus 1
+const scoreDolphins = (97 + 112 + 101) / 3;
+const scoreKoalas = (109 + 95 + 123) / 3;
 console.log(scoreDolphins, scoreKoalas);
 
-// 2
-if (scoreDolphins > scoreKoalas) {
+if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
   console.log("Dolphins wins!");
-} else if (scoreKoalas > scoreDolphins) {
+} else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
   console.log("Koalas wins!");
 } else if (scoreDolphins === scoreKoalas) {
   console.log("draw!");
