@@ -407,10 +407,17 @@ Test data:
 */
 //1
 const scoreDolphins = (96 + 108 + 89) / 3;
-const scoreKoalas = (88 + 91 + 110) / 3;
+const scoreKoalas = (96 + 108 + 89) / 3;
 console.log(scoreDolphins, scoreKoalas);
 
 // 2
+if (scoreDolphins > scoreKoalas) {
+  console.log("Dolphins wins!");
+} else if (scoreKoalas > scoreDolphins) {
+  console.log("Koalas wins!");
+} else if (scoreDolphins === scoreKoalas) {
+  console.log("draw!");
+}
 
 /*
 // The switch statement
