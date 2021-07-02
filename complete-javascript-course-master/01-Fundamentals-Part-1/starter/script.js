@@ -383,7 +383,7 @@ if (hasDriversLicence && hasGoodVision && !isTired) {
 } else {
   console.log("Someone else should drive...");
 }
-*/
+
 
 // The switch statement
 
@@ -427,3 +427,11 @@ if (day === "monday") {
 } else {
   console.log("not a valid day!");
 }
+
+*/
+
+//Statement and expresions
+
+3 + 4; // this is an expresion because it does produce value
+1991; // expresion as well
+true && false && !false; //expresion- boolean value
