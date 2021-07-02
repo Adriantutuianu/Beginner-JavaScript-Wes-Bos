@@ -437,5 +437,8 @@ if (day === "monday") {
 true && false && !false; //expresion- boolean value
 
 if (23 > 10) {
-  const str = "23 is bigger"; //no value produced
+  const str = "23 is bigger"; //no value produced -'23 is bigger'  is an expresion.
 }
+
+const me = "Jonas";
+console.log(`I'm ${2037 - 1991} years old ${me}`); // this is an expresion
