@@ -448,3 +448,6 @@ const age = 23;
 age >= 18
   ? console.log("I like to drink wine🍷")
   : console.log("I like to drink water🌊");
+// we are going to do it like that- all condition in a single line
+const drink = age >= 18 ? "wine🍷" : "water🌊";
+console.log(drink);
