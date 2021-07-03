@@ -418,21 +418,27 @@ Test data:
 // } else if (scoreDolphins === scoreKoalas) {
 //   console.log("draw!");
 // }
-
+/*
 // bonus 1
 const scoreDolphins = (97 + 112 + 101) / 3;
-const scoreKoalas = (109 + 95 + 123) / 3;
+const scoreKoalas = (109 + 95 + 106) / 3;
 console.log(scoreDolphins, scoreKoalas);
 
 if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
   console.log("Dolphins wins!");
 } else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
   console.log("Koalas wins!");
-} else if (scoreDolphins === scoreKoalas) {
+} else if (
+  scoreDolphins === scoreKoalas &&
+  scoreDolphins >= 100 &&
+  scoreKoalas >= 100
+) {
   console.log("draw!");
+} else {
+  console.log("No one wins the trophy!");
 }
 
-/*
+
 // The switch statement
 
 const day = "friday";
