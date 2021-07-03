@@ -22,3 +22,5 @@ function logger() {
 // now we can use it as many times as we want.
 // calling / running / invoking the function
 logger();
+logger();
+logger();
