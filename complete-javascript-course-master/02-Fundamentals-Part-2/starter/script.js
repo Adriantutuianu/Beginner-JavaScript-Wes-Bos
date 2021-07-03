@@ -35,3 +35,5 @@ function fruitProcessor(apples, oranges) {
 
 const appleJuice = fruitProcessor(5, 0); //arguments
 console.log(appleJuice);
+const appleJuice2 = fruitProcessor(2, 10); //arguments
+console.log(appleJuice2);
