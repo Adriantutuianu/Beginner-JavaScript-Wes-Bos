@@ -9,3 +9,6 @@ if (passTest) hasDriverLicence = true; //ommit the s
 if (hasDriversLicence) console.log("I can drive :D");
 
 // without the error it will work
+
+// const interface = "Audio";
+// const private = 534; strict mode reserves a few words for the feature.
