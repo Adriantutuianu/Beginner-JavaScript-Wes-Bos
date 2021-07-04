@@ -60,7 +60,7 @@ const age2 = calcAge2(1990);
 console.log(age1, age2);
 // Expressions produce values 
 // It is  my choice which type I use.
-*/
+
 
 // Arrow functions
 // Is a function expresion but is shorter and faster to write
@@ -79,3 +79,20 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1991, "Jonas"));
 console.log(yearsUntilRetirement(1980, "Bob"));
+*/
+
+//Functions calling other functions
+
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+  //parameters
+  const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+  return juice;
+}
+
+console.log(fruitProcessor(2, 3));
