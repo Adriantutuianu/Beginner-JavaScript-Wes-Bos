@@ -39,7 +39,7 @@ console.log(appleJuice2);
 //We can run this function as many times as we want.
 //convert a number in a string
 const num = Number("23");
-*/
+
 
 // Function declaration
 
@@ -49,13 +49,23 @@ function calcAge1(birthYear) {
 }
 
 const age1 = calcAge1(1991);
-console.log(age1);
 
-// Function expresion
+// Function expression
 
 const calcAge2 = function (birthYear) {
   return 2037 - birthYear;
-};
+}
 
 const age2 = calcAge2(1990);
-console.log(age2);
+console.log(age1, age2);
+// Expressions produce values 
+// It is  my choice which type I use.
+*/
+
+// Arrow functions
+// Is a function expresion but is shorter and faster to write
+
+const calcAge3 = (birthYear) => 2037 - birthYear;
+
+const age3 = calcAge3(1991);
+console.log(age3);
