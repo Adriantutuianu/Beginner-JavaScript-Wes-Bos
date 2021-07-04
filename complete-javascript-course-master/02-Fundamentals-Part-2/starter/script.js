@@ -41,7 +41,7 @@ console.log(appleJuice2);
 const num = Number("23");
 */
 
-// Function declarations and expresions
+// Function declaration
 
 // Calculate age by given birth year
 function calcAge1(birthYear) {
@@ -50,3 +50,12 @@ function calcAge1(birthYear) {
 
 const age1 = calcAge1(1991);
 console.log(age1);
+
+// Function expresion
+
+const calcAge2 = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const age2 = calcAge2(1990);
+console.log(age2);
