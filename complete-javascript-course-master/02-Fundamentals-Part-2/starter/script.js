@@ -13,7 +13,7 @@ if (hasDriversLicence) console.log("I can drive :D");
 
 // const interface = "Audio";
 // const private = 534; strict mode reserves a few words for the feature.
-*/
+
 
 // functions
 function logger() {
@@ -39,3 +39,14 @@ console.log(appleJuice2);
 //We can run this function as many times as we want.
 //convert a number in a string
 const num = Number("23");
+*/
+
+// Function declarations and expresions
+
+// Calculate age by given birth year
+function calcAge1(birthYear) {
+  return 2037 - birthYear;
+}
+
+const age1 = calcAge1(1991);
+console.log(age1);
