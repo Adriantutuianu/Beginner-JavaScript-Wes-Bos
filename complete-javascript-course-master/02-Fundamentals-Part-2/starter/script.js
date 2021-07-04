@@ -28,7 +28,6 @@ logger();
 // receive or return data
 function fruitProcessor(apples, oranges) {
   //parameters
-  console.log(apples, oranges);
   const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
   return juice;
 }
@@ -37,3 +36,6 @@ const appleJuice = fruitProcessor(5, 0); //arguments
 console.log(appleJuice);
 const appleJuice2 = fruitProcessor(2, 10); //arguments
 console.log(appleJuice2);
+//We can run this function as many times as we want.
+//convert a number in a string
+const num = Number("23");
