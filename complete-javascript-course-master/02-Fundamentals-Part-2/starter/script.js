@@ -129,3 +129,11 @@ console.log(friends);
 // Similar Array
 const years = new Array(1991, 1984, 2008, 2020);
 console.log(years);
+
+// Console the first from friends - Michael
+console.log(friends[0]);
+// Console the 3rd from friends - Peter
+console.log(friends[2]);
+
+//Console the number of elements in the array
+console.log(friends.length);
