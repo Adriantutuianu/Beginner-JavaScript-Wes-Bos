@@ -142,3 +142,7 @@ console.log(friends[friends.length - 1]);
 // Add Elements to the array
 friends[2] = "Jay"; // change Peter with Jay
 console.log(friends);
+// An array with different types of values at the same time
+const firstName = "Jonas";
+const jonas = [firstName, "Schmedtmann", 2037 - 1991, "teacher", friends];
+console.log(jonas);
