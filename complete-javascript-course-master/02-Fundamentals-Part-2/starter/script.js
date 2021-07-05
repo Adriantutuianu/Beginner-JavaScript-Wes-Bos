@@ -137,3 +137,5 @@ console.log(friends[2]);
 
 //Console the number of elements in the array
 console.log(friends.length);
+// Console the last Element
+console.log(friends[friends.length - 1]);
