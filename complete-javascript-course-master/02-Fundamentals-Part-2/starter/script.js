@@ -130,12 +130,15 @@ console.log(friends);
 const years = new Array(1991, 1984, 2008, 2020);
 console.log(years);
 
-// Console the first from friends - Michael
+// Console the first from friends - Michael- the count starts from 0
 console.log(friends[0]);
 // Console the 3rd from friends - Peter
 console.log(friends[2]);
 
 //Console the number of elements in the array
 console.log(friends.length);
-// Console the last Element
+// Console the last Element- friends.length which is 3 - 1 which takes me at position 2  which is Peter- the last one.
 console.log(friends[friends.length - 1]);
+// Add Elements to the array
+friends[2] = "Jay"; // change Peter with Jay
+console.log(friends);
