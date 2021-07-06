@@ -118,53 +118,6 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 console.log(yearsUntilRetirement(1991, "Jonas"));
 console.log(yearsUntilRetirement(1950, "Mike"));
 
-
-// Arrays
-const friend1 = "Michael";
-const friend2 = "Steven";
-const friend3 = "Peter";
-
-const friends = ["Michael", "Steven", "Peter"];
-console.log(friends);
-// Similar Array
-const y = new Array(1991, 1984, 2008, 2020);
-console.log(y);
-
-// Console the first from friends - Michael- the count starts from 0
-console.log(friends[0]);
-// Console the 3rd from friends - Peter
-console.log(friends[2]);
-
-//Console the number of elements in the array
-console.log(friends.length);
-// Console the last Element- friends.length which is 3 - 1 which takes me at position 2  which is Peter- the last one.
-console.log(friends[friends.length - 1]);
-// Add Elements to the array
-friends[2] = "Jay"; // change Peter with Jay
-console.log(friends);
-// An array with different types of values at the same time
-const firstName = "Jonas";
-const jonas = [firstName, "Schmedtmann", 2037 - 1991, "teacher", friends];
-console.log(jonas);
-//Exercise
-const calcAge = function (birthYear) {
-  return 2037 - birthYear;
-};
-const years = [1990, 1967, 2002, 2010, 2018];
-// calculate age for 1, 2, 5 element
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[years.length - 1]);
-console.log(age1, age2, age3);
-
-const ages = [
-  calcAge(years[0]),
-  calcAge(years[1]),
-  calcAge(years[years.length - 1]),
-];
-console.log(ages);
-
-
 Coding Challenge #1
 Back to the two gymnastics teams, the Dolphins and the Koalas! There is a new
 gymnastics discipline, which works differently.
@@ -217,7 +170,55 @@ scoreDolphins = calcAverage(85, 54, 41);
 scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);
-*/
+
+
+// Arrays
+
+const friend1 = "Michael";
+const friend2 = "Steven";
+const friend3 = "Peter";
+
+const friends = ["Michael", "Steven", "Peter"];
+console.log(friends);
+// Similar Array
+const y = new Array(1991, 1984, 2008, 2020);
+console.log(y);
+
+// Console the first from friends - Michael- the count starts from 0
+console.log(friends[0]);
+// Console the 3rd from friends - Peter
+console.log(friends[2]);
+
+//Console the number of elements in the array
+console.log(friends.length);
+// Console the last Element- friends.length which is 3 - 1 which takes me at position 2  which is Peter- the last one.
+console.log(friends[friends.length - 1]);
+// Add Elements to the array
+friends[2] = "Jay"; // change Peter with Jay
+console.log(friends);
+// An array with different types of values at the same time
+const firstName = "Jonas";
+const jonas = [firstName, "Schmedtmann", 2037 - 1991, "teacher", friends];
+console.log(jonas);
+//Exercise
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+const years = [1990, 1967, 2002, 2010, 2018];
+// calculate age for 1, 2, 5 element
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [
+  calcAge(years[0]),
+  calcAge(years[1]),
+  calcAge(years[years.length - 1]),
+];
+console.log(ages);
+
+
 
 // Basic array operations
 
@@ -245,5 +246,39 @@ console.log(friends.indexOf("Steven"));
 console.log(friends.indexOf("Bob")); //it`s not on the list
 
 // Includes method
-console.log(friends.includes("Steven"));
-console.log(friends.includes("Bob"));
+console.log(friends.includes("Steven")); //true
+console.log(friends.includes("Bob")); //false
+
+Coding Challenge #2
+Steven is still building his tip calculator, using the same rules as before: Tip 15% of
+the bill if the bill value is between 50 and 300, and if the value is different, the tip is
+20%.
+Your tasks:
+1. Write a function 'calcTip' that takes any bill value as an input and returns
+the corresponding tip, calculated based on the rules above (you can check out
+the code from first tip calculator challenge if you need to). Use the function
+type you like the most. Test the function using a bill value of 100
+2. And now let's use arrays! So create an array 'bills' containing the test data
+below
+3. Create an array 'tips' containing the tip value for each bill, calculated from
+the function you created before
+4. Bonus: Create an array 'total' containing the total values, so the bill + tip
+Test data: 125, 555 and 44
+Hint: Remember that an array needs a value in each position, and that value can
+actually be the returned value of a function! So you can just call a function as array
+values (so don't store the tip values in separate variables first, but right in the new
+array) 😉
+*/
+
+// 1
+
+const calcTip = function (bill) {
+  return bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+};
+
+//2
+const bills = [125, 555, 44];
+console.log(bills);
+
+// 3
+const tips = 
