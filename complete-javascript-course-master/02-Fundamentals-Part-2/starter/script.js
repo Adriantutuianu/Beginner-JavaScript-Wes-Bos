@@ -240,3 +240,10 @@ console.log(friends); //Jay and Peter are gone
 // Remove the first element of the array
 friends.shift();
 console.log(friends);
+
+console.log(friends.indexOf("Steven"));
+console.log(friends.indexOf("Bob")); //it`s not on the list
+
+// Includes method
+console.log(friends.includes("Steven"));
+console.log(friends.includes("Bob"));
