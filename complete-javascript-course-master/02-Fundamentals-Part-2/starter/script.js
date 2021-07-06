@@ -232,3 +232,7 @@ console.log(newLength);
 // The unshift method
 friends.unshift("John");
 console.log(friends);
+// Method to remove an element to array
+friends.pop(); //last element of the array.
+friends.pop(); //last element of the array.
+console.log(friends); //Jay and Peter are gone
