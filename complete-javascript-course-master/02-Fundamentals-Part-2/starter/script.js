@@ -281,4 +281,5 @@ const bills = [125, 555, 44];
 console.log(bills);
 
 // 3
-const tips = 
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(bills, tips);
