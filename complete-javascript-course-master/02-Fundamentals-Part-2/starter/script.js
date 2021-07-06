@@ -236,3 +236,7 @@ console.log(friends);
 friends.pop(); //last element of the array.
 friends.pop(); //last element of the array.
 console.log(friends); //Jay and Peter are gone
+
+// Remove the first element of the array
+friends.shift();
+console.log(friends);
