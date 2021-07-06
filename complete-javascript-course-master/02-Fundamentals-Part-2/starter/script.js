@@ -224,5 +224,11 @@ checkWinner(scoreDolphins, scoreKoalas);
 const friends = ["Michael", "Steven", "Peter"];
 
 // the push method
-friends.push("Jay");
+const newLength = friends.push("Jay");
 console.log(friends); // Original array + Jay
+console.log(newLength);
+
+// Method to add Element to the begginning of the array
+// The unshift method
+friends.unshift("John");
+console.log(friends);
