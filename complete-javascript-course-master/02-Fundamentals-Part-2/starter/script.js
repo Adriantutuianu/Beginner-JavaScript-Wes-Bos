@@ -316,3 +316,11 @@ console.log(jonas["lastName"]); //similar
 const nameKey = "Name";
 console.log(jonas["first" + nameKey]);
 console.log(jonas["last" + nameKey]);
+
+// prompt-string - pop up window with input field
+const interestedIn = prompt(
+  "What do you want to know about Jonas? Choose between firstName, lastName, age, job, and freinds"
+);
+console.log(interestedIn);
+// Display the job in console because this is the user choose.
+console.log(jonas[interestedIn]);
