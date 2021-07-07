@@ -300,6 +300,7 @@ const jonas = {
   friends: ["Michael", "Peter", "Steven"],
 };
 */
+/*
 // Dot vs bracket notation
 const jonas = {
   firstName: "Jonas",
@@ -344,3 +345,20 @@ console.log(jonas);
 //"Jonas has 3 friends and his best friend is called Michael"
 console.log(`
   ${jonas.firstName} has ${jonas.friends.length} and his best friend is called ${jonas.friends[0]}`);
+*/
+//Object methods
+
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
+  birthYear: 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+  hasDriverLicence: true,
+
+  calcAge: function (birthYear) {
+    return 2037 - birthYear;
+  },
+};
+
+console.log(jonas.calcAge(1991));
