@@ -324,3 +324,12 @@ const interestedIn = prompt(
 console.log(interestedIn);
 // Display the job in console because this is the user choose.
 console.log(jonas[interestedIn]); //use bracket notation for correct result
+
+// tried to console location => undefined - is not on the list
+if (jonas[interestedIn]) {
+  console.log(jonas[interestedIn]);
+} else {
+  console.log(
+    "Wrong request! Choose between firstName, lastName, age, job, and freinds"
+  );
+}
