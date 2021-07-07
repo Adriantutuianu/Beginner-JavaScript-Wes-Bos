@@ -290,7 +290,7 @@ console.log(total);
 */
 
 // Introduction to Objects
-
+/*
 //object with 5 properties
 const jonas = {
   firstName: "Jonas",
@@ -299,3 +299,20 @@ const jonas = {
   job: "teacher",
   friends: ["Michael", "Peter", "Steven"],
 };
+*/
+// Dot vs bracket notation
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
+  age: 2037 - 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+};
+console.log(jonas);
+
+console.log(jonas.lastName); //last name
+console.log(jonas["lastName"]); //similar
+
+const nameKey = "Name";
+console.log(jonas["first" + nameKey]);
+console.log(jonas["last" + nameKey]);
