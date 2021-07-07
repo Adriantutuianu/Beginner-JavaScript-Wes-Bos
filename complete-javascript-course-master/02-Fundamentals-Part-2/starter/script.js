@@ -323,4 +323,4 @@ const interestedIn = prompt(
 );
 console.log(interestedIn);
 // Display the job in console because this is the user choose.
-console.log(jonas[interestedIn]);
+console.log(jonas[interestedIn]); //use bracket notation for correct result
