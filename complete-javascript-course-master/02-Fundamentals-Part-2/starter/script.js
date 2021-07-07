@@ -333,3 +333,9 @@ if (jonas[interestedIn]) {
     "Wrong request! Choose between firstName, lastName, age, job, and freinds"
   );
 }
+
+// To add new property to objects
+
+jonas.location = "Portugal"; //dot
+jonas["twitter"] = "@jonasschmedtmann"; //brackets
+console.log(jonas);
