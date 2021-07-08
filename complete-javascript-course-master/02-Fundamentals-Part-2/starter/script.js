@@ -347,7 +347,7 @@ console.log(`
   ${jonas.firstName} has ${jonas.friends.length} and his best friend is called ${jonas.friends[0]}`);
 */
 //Object methods
-
+/*
 const jonas = {
   firstName: "Jonas",
   lastName: "Schmedtmann",
@@ -389,7 +389,7 @@ const mark = {
     return this.bmi;
   },
 };
-
+/*
 const john = {
   fullName: "John Smith",
   mass: 92,
@@ -416,3 +416,11 @@ if (mark.bmi > john.bmi) {
     `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`
   );
 }
+*/
+const result = document.querySelector("#result");
+
+result.innerHTML = mark.calcBMI();
+
+const mass = document.querySelector("#mass");
+
+mass.innerHTML = mark.mass;
