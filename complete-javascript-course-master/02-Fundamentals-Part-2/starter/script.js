@@ -468,3 +468,12 @@ for (let i = 0; i < years.length; i++) {
 }
 
 console.log(ages);
+
+// Continue and break
+// If we want to print only results that are springs
+console.log("---ONLY STRINGS---");
+for (let i = 0; i < jonas.length; i++) {
+  if (typeof jonas[i] !== "string") continue;
+
+  console.log(jonas[i], typeof jonas[i]);
+}
