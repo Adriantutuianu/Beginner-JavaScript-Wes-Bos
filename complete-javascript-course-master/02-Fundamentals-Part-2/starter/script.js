@@ -424,7 +424,7 @@ result.innerHTML = mark.calcBMI();
 const mass = document.querySelector("#mass");
 
 mass.innerHTML = mark.mass;
-*/
+
 
 //46. The for loop
 // Allow us to automate repetitive tasks ;
@@ -442,5 +442,19 @@ mass.innerHTML = mark.mass;
 
 //for loop keeps running while condition is true
 for (let rep = 1; rep <= 10; rep++) {
-  console.log("Lifting weights repetition 1🏋️‍♀️🏋️‍♂️");
+  console.log(`Lifting weights repetition ${rep}`);
+}
+*/
+// 47. Looping arrays , breaking and continuing
+
+const jonas = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+];
+
+for (let i = 0; i < 5; i++) {
+  console.log(jonas[i]);
 }
