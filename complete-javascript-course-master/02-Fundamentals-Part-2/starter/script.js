@@ -444,7 +444,7 @@ mass.innerHTML = mark.mass;
 for (let rep = 1; rep <= 10; rep++) {
   console.log(`Lifting weights repetition ${rep}`);
 }
-*/
+
 // 47. Looping arrays , breaking and continuing
 
 const jonas = [
@@ -487,4 +487,22 @@ for (let i = 0; i < jonas.length; i++) {
   if (typeof jonas[i] === "number") break;
 
   console.log(jonas[i], typeof jonas[i]);
+}
+*/
+
+//48. Looping backwords and loops in loops
+
+// Loop backwords
+//normal : 0, 1, 2, 3, 4
+// loop backwords : 4, 3, 2, 1, 0
+const jonas = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+];
+
+for (let i = jonas.length - 1; i >= 0; i--) {
+  console.log(jonas[i]);
 }
