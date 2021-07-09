@@ -459,3 +459,12 @@ for (let i = 0; i < jonas.length; i++) {
   //jonas.length helps as to update the number whenever we add them.
   console.log(jonas[i], typeof jonas[i]); // typeof- type of value
 }
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
+}
+
+console.log(ages);
