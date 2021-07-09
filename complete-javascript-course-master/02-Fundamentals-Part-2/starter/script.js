@@ -488,7 +488,7 @@ for (let i = 0; i < jonas.length; i++) {
 
   console.log(jonas[i], typeof jonas[i]);
 }
-*/
+
 
 //48. Looping backwords and loops in loops
 
@@ -513,5 +513,17 @@ for (let exercise = 1; exercise < 4; exercise++) {
   console.log(`--------Starting exercise ${exercise} `);
 
   for (let rep = 1; rep < 6; rep++)
-    [console.log(`Lifting weight repetition ${rep}`)];
+    [console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}🤸🏼‍♀️`)];
+}
+*/
+
+// The while loop
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep}🤸🏼‍♂️`);
+}
+
+let rep = 1;
+while (rep <= 10) {
+  console.log(`WHILE: Lifting weights repetition ${rep}🤸🏼‍♂️`);
+  rep++;
 }
