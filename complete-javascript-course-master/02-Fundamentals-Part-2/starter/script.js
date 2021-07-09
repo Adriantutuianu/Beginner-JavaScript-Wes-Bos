@@ -455,6 +455,7 @@ const jonas = [
   ["Michael", "Peter", "Steven"],
 ];
 
-for (let i = 0; i < 5; i++) {
-  console.log(jonas[i]);
+for (let i = 0; i < jonas.length; i++) {
+  //jonas.length helps as to update the number whenever we add them.
+  console.log(jonas[i], typeof jonas[i]); // typeof- type of value
 }
