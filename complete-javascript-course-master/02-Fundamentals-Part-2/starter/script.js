@@ -477,3 +477,14 @@ for (let i = 0; i < jonas.length; i++) {
 
   console.log(jonas[i], typeof jonas[i]);
 }
+
+//break - completely terminate the whole loop
+
+// ex : after a nubmer is found nothing else should be printed
+
+console.log("---BREAK WITH NUMBER---");
+for (let i = 0; i < jonas.length; i++) {
+  if (typeof jonas[i] === "number") break;
+
+  console.log(jonas[i], typeof jonas[i]);
+}
