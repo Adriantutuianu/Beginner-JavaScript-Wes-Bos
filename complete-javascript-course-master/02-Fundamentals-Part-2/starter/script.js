@@ -551,7 +551,7 @@ loop to perform the 10 calculations!
 Test data: 22, 295, 176, 440, 37, 105, 10, 1100, 86 and 52
 Hints: Call ‘calcTip ‘in the loop and use the push method to add values to the
 tips and totals arrays 😉
-*/
+
 
 // 1
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
@@ -572,3 +572,4 @@ for (let i = 0; i < bills.length; i++) {
   totals.push(tip + bills[i]);
 }
 console.log(bills, tips, totals);
+*/
