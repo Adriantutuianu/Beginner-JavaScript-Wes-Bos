@@ -4,3 +4,5 @@
 // 55 Setting up Prettier and vs code
 // Prettier automatically transform code how should be
 const x = 23;
+//prettier transform any single quotes in double quotes
+// Installed Node.js
