@@ -6,3 +6,6 @@
 const x = 23;
 //prettier transform any single quotes in double quotes
 // Installed Node.js
+
+// HtML and CSS crash course
+// 64. Basic HTML
