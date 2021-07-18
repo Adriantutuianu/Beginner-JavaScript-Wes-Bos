@@ -20,11 +20,23 @@ document.querySelector('.guess').value = 23;
 
 // 73. Handling click events
 
-const x = function () {
-  console.log(23);
-};
+// const x = function () {
+//   console.log(23);
+// };
 
 // similar
+// document.querySelector('.check').addEventListener('click', function () {
+//   console.log(document.querySelector('.guess').value);
+// });
+
+// 74. Implementing the Game Logic
+
+const number = Math.trunc(Math.random() * 20) + 1;
+document.querySelector('.number').textContent = number;
 document.querySelector('.check').addEventListener('click', function () {
-  console.log(document.querySelector('.guess').value);
+  const guess = Number(document.querySelector('.guess').value);
+
+  if (!guess) {
+    document.querySelector('.message').textContent = '🛑 No number!';
+  }
 });
