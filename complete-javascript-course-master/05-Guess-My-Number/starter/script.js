@@ -7,3 +7,11 @@ console.log(document.querySelector('.message').textContent);
 
 // Change the content
 document.querySelector('.message').textContent = 'Correct number🥳';
+console.log(document.querySelector('.message').textContent);
+
+//72.Seleting and manipulating elements
+document.querySelector('.number').textContent = 13;
+document.querySelector('.score').textContent = 10;
+
+console.log(document.querySelector('.guess').value);
+document.querySelector('.guess').value = 23;
