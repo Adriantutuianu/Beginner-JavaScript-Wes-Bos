@@ -34,8 +34,6 @@ document.querySelector('.guess').value = 23;
 const secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 
-document.querySelector('.number').textContent = secretNumber;
-
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
   console.log(guess, typeof guess);
@@ -46,6 +44,7 @@ document.querySelector('.check').addEventListener('click', function () {
     // When player wins
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent = 'Correct number🥳';
+    document.querySelector('.number').textContent = secretNumber;
 
     document.querySelector('body').style.backgroundColor = '#60b347';
 
@@ -77,4 +76,17 @@ document.querySelector('.check').addEventListener('click', function () {
   }
 });
 
-// 75 Manipulating CSS styles
+// Coding Challenge #1
+// Implement a game rest functionality, so that the player can make a new guess!
+// Your tasks:
+// 1. Select the element with the 'again' class and attach a click event handler
+// 2. In the handler function, restore initial values of the 'score' and
+// 'secretNumber' variables
+// 3. Restore the initial conditions of the message, number, score and guess input
+// fields
+// 4. Also restore the original background color (#222) and number width (15rem)
+
+// 1
+document.querySelector('.again').addEventListener('click', function () {
+
+}
