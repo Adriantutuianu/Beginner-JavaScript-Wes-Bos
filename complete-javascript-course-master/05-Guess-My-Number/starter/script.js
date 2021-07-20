@@ -31,7 +31,7 @@ document.querySelector('.guess').value = 23;
 
 // 74. Implementing the Game Logic
 
-const secretNumber = Math.trunc(Math.random() * 20) + 1;
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 
 document.querySelector('.check').addEventListener('click', function () {
@@ -88,5 +88,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
 // 1
 document.querySelector('.again').addEventListener('click', function () {
-
+//2
+  score = 20;
+secretNumber = Math.trunc(Math.random() * 20) + 1;
 }
