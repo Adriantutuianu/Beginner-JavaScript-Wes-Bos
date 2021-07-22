@@ -26,5 +26,5 @@ overlay.addEventListener('click', closeModal);
 // 81 Handling an ESC keypress event
 
 document.addEventListener('keydown', function (e) {
-  console.log(e);
+  console.log(e.key);
 });
