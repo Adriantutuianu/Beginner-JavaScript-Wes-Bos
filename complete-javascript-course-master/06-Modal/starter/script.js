@@ -15,8 +15,10 @@ for (let i = 0; i < btnsOpenModal.length; i++)
   );
 
 //   80 Working with classes
-
-btnCloseModal.addEventListener('click', function () {
+const closeModal = function () {
   modal.classList.add('hidden');
   overlay.classList.add('hidden');
-});
+};
+btnCloseModal.addEventListener('click', closeModal);
+// Click outside the modal to close it
+overlay.addEventListener('click', closeModal);
