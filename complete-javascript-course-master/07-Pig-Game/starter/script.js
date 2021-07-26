@@ -47,3 +47,16 @@ btnRoll.addEventListener('click', function () {
     player1El.classList.toggle('player--active');
   }
 });
+
+// 85.Holding the score
+
+btnHold.addEventListener('click', function () {
+  // 1.Add current score to active player
+  scores[activePlayer] += currentScore;
+  // scores[1] = scores[1] + currentScore
+  document.getElementById(`current--${activePlayer}`).textContent =
+    scores[activePlayer];
+  //2.check if player score is >= 100
+  //finish the game
+  //3Switch to netx player
+});
