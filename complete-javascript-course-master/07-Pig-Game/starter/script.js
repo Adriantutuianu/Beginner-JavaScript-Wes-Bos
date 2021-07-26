@@ -20,6 +20,7 @@ diceEl.classList.add('hidden');
 const scores = [0, 0];
 let currentScore = 0;
 let activePlayer = 0;
+let playing = true;
 
 const switchPlayer = function () {
   document.getElementById(`current--${activePlayer}`).textContent = 0;
@@ -33,44 +34,49 @@ const switchPlayer = function () {
 // 83. Rolling the dice
 
 btnRoll.addEventListener('click', function () {
-  // 1.Generating a random dice roll
-  const dice = Math.trunc(Math.random() * 6) + 1;
-  console.log(dice);
-  // 2.Display dice
-  diceEl.classList.remove('hidden');
-  diceEl.src = `dice-${dice}.png`;
-  // 3. Check the roller 1
-  if (dice !== 1) {
-    // Add dice to current score
-    currentScore = currentScore += dice;
-    document.getElementById(`current--${activePlayer}`).textContent =
-      currentScore;
-    current0El.textContent = currentScore; //change later
-  } else {
-    // switch to next player
-    switchPlayer();
+  if (playing) {
+    // 1.Generating a random dice roll
+    const dice = Math.trunc(Math.random() * 6) + 1;
+    console.log(dice);
+    // 2.Display dice
+    diceEl.classList.remove('hidden');
+    diceEl.src = `dice-${dice}.png`;
+    // 3. Check the roller 1
+    if (dice !== 1) {
+      // Add dice to current score
+      currentScore = currentScore += dice;
+      document.getElementById(`current--${activePlayer}`).textContent =
+        currentScore;
+      current0El.textContent = currentScore; //change later
+    } else {
+      // switch to next player
+      switchPlayer();
+    }
   }
 });
 
 // 85.Holding the score
 
 btnHold.addEventListener('click', function () {
-  // 1.Add current score to active player
-  scores[activePlayer] += currentScore;
-  // scores[1] = scores[1] + currentScore
-  document.getElementById(`score--${activePlayer}`).textContent =
-    scores[activePlayer];
-  //2.check if player score is >= 100
-  if (scores[activePlayer] >= 20) {
-    //finish the game
-    document
-      .querySelector(`.player--${activePlayer}`)
-      .classList.add('player--winner');
-    document
-      .querySelector(`.player--${activePlayer}`)
-      .classList.remove('player--active');
-  } else {
-    //3.Switch to next player
-    switchPlayer();
+  if (playing) {
+    // 1.Add current score to active player
+    scores[activePlayer] += currentScore;
+    // scores[1] = scores[1] + currentScore
+    document.getElementById(`score--${activePlayer}`).textContent =
+      scores[activePlayer];
+    //2.check if player score is >= 100
+    if (scores[activePlayer] >= 20) {
+      //finish the game
+      playing = false;
+      document
+        .querySelector(`.player--${activePlayer}`)
+        .classList.add('player--winner');
+      document
+        .querySelector(`.player--${activePlayer}`)
+        .classList.remove('player--active');
+    } else {
+      //3.Switch to next player
+      switchPlayer();
+    }
   }
 });
