@@ -21,6 +21,15 @@ const scores = [0, 0];
 let currentScore = 0;
 let activePlayer = 0;
 
+const switchPlayer = function () {
+  document.getElementById(`current--${activePlayer}`).textContent = 0;
+  activePlayer = activePlayer === 0 ? 1 : 0;
+  currentScore = 0;
+  //Remove or add class to change background color
+  player0El.classList.toggle('player--active');
+  player1El.classList.toggle('player--active');
+};
+
 // 83. Rolling the dice
 
 btnRoll.addEventListener('click', function () {
@@ -39,12 +48,7 @@ btnRoll.addEventListener('click', function () {
     current0El.textContent = currentScore; //change later
   } else {
     // switch to next player
-    document.getElementById(`current--${activePlayer}`).textContent = 0;
-    activePlayer = activePlayer === 0 ? 1 : 0;
-    currentScore = 0;
-    //Remove or add class to change background color
-    player0El.classList.toggle('player--active');
-    player1El.classList.toggle('player--active');
+    switchPlayer();
   }
 });
 
@@ -54,9 +58,10 @@ btnHold.addEventListener('click', function () {
   // 1.Add current score to active player
   scores[activePlayer] += currentScore;
   // scores[1] = scores[1] + currentScore
-  document.getElementById(`current--${activePlayer}`).textContent =
+  document.getElementById(`score--${activePlayer}`).textContent =
     scores[activePlayer];
   //2.check if player score is >= 100
   //finish the game
-  //3Switch to netx player
+  //3.Switch to next player
+  switchPlayer();
 });
