@@ -12,9 +12,15 @@ function calcAge(birthYear) {
     console.log(output);
 
     if (birthYear >= 1981 && birthYear <= 1996) {
+      var millenial = true;
       const str = `Oh, and you are a millenial, ${firstName}`;
       console.log(str);
-    }
+
+function add(a, b);
+return a + b;
+
+    } 
+    console.log(millenial);
   }
   printAge();
 
@@ -23,3 +29,7 @@ function calcAge(birthYear) {
 
 const firstName = 'Jonas';
 calcAge(1991);
+
+
+// 94. Variable environment .Hoisting and The TDZ 
+// Hoisting- makes some types of variable accesible/usable in the code before they are actually declared.  
