@@ -74,3 +74,19 @@ const z = 3;
 
 // 96. The this keyword
 // Special variable that is created for every execution AudioContext(every function)
+
+console.log(this); //only in strict mode
+
+const calcAge = function (birthYear) {
+  console.log(2037 - birthYear);
+  console.log(this);
+};
+
+calcAge(1991);
+
+const calcAgeArrow = birthYear => {
+  console.log(2037 - birthYear);
+  console.log(this);
+};
+
+calcAgeArrow(1980);
