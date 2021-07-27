@@ -91,10 +91,19 @@ const calcAgeArrow = birthYear => {
 
 calcAgeArrow(1980);
 
+// This keyword will point to the object that is calling the method
 const jonas = {
   year: 1991,
   calcAge: function () {
     console.log(this);
+    console.log(2037 - this.year);
   },
 };
 jonas.calcAge();
+
+const matilda = {
+  year: 2017,
+};
+
+//Method borrowing
+matilda.calcAge = jonas.calcAge;
