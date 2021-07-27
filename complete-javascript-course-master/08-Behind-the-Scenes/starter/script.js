@@ -3,3 +3,12 @@
 //Lexical scoping: Scoping is controlled by placement of functions and blocks in code
 //Scope of a variable: Region of our code where a certain variable can be accessed.
 // 3 types of scope: global scope, function scope, block scope(ES6)
+
+function calcAge(birthYear) {
+  const age = 2037 - birthYear;
+  console.log(firstName);
+  return age;
+}
+
+const firstName = 'Jonas';
+calcAge(1991);
