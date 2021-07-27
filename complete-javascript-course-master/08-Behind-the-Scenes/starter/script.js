@@ -4,32 +4,55 @@
 //Scope of a variable: Region of our code where a certain variable can be accessed.
 // 3 types of scope: global scope, function scope, block scope(ES6)
 
-function calcAge(birthYear) {
-  const age = 2037 - birthYear;
+// function calcAge(birthYear) {
+//   const age = 2037 - birthYear;
 
-  function printAge() {
-    const output = `${firstName}, You are ${age}, born in ${birthYear}`;
-    console.log(output);
+//   function printAge() {
+//     const output = `${firstName}, You are ${age}, born in ${birthYear}`;
+//     console.log(output);
 
-    if (birthYear >= 1981 && birthYear <= 1996) {
-      var millenial = true;
-      const str = `Oh, and you are a millenial, ${firstName}`;
-      console.log(str);
+//     if (birthYear >= 1981 && birthYear <= 1996) {
+//       var millenial = true;
+//       const str = `Oh, and you are a millenial, ${firstName}`;
+//       console.log(str);
 
-function add(a, b);
-return a + b;
+// function add (a, b);
+// return a + b;
 
-    } 
-    console.log(millenial);
-  }
-  printAge();
+//     }
+//     console.log(millenial);
+//   }
+//   printAge();
 
-  return age;
+//   return age;
+// }
+
+// const firstName = 'Jonas';
+// calcAge(1991);
+
+// 94. Variable environment .Hoisting and The TDZ
+// Hoisting- makes some types of variable accesible/usable in the code before they are actually declared.
+
+//Variables
+console.log(me);
+// console.log(job);
+// console.log(year);
+
+var me = 'Jonas';
+let job = 'teacher';
+const year = 1991;
+
+//Functions
+console.log(addDecl(2, 3));
+console.log(addExpr(2, 3));
+console.log(addArrow(2, 3));
+
+function addDecl(a, b) {
+  return a + b;
 }
 
-const firstName = 'Jonas';
-calcAge(1991);
+const addExpr = function (a, b) {
+  return (a = b); //not working
+};
 
-
-// 94. Variable environment .Hoisting and The TDZ 
-// Hoisting- makes some types of variable accesible/usable in the code before they are actually declared.  
+var addArrow = (a, b) => a + b; // not working
