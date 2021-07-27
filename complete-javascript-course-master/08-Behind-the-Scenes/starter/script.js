@@ -32,7 +32,7 @@
 
 // 94. Variable environment .Hoisting and The TDZ
 // Hoisting- makes some types of variable accesible/usable in the code before they are actually declared.
-
+/*
 //Variables
 console.log(me);
 // console.log(job);
@@ -66,3 +66,11 @@ var numProducts = 10;
 function deleteShoppingCart() {
   console.log('All products deleted');
 }
+
+var x = 1;
+let y = 2;
+const z = 3;
+*/
+
+// 96. The this keyword
+// Special variable that is created for every execution AudioContext(every function)
