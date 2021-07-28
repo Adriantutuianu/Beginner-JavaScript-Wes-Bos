@@ -74,7 +74,7 @@ const z = 3;
 
 // 96. The this keyword
 // Special variable that is created for every execution AudioContext(every function)
-
+/*
 console.log(this); //only in strict mode
 
 const calcAge = function (birthYear) {
@@ -111,3 +111,17 @@ matilda.calcAge();
 
 const f = jonas.calcAge;
 f();
+*/
+// 98 Regular functions vs arrow functions
+const jonas = {
+  firstName: 'Jonas',
+  year: 1991,
+  calcAge: function () {
+    console.log(this);
+    console.log(2037 - this.year);
+  },
+
+  greet: () => console.log(`Hey ${this.firstName}`),
+}; //undefined
+jonas.greet();
+console.log(this.firstName);
