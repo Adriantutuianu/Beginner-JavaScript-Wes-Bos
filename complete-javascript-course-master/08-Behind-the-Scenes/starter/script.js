@@ -144,8 +144,34 @@ friend.age = 27;
 console.log('Friend:', friend);
 console.log('Me', me);
 */
+// Primitive types
 let lastName = 'Williams';
 let oldLastName = lastName;
-lastName = 'Davies';
+lastName = 'Davis';
 console.log(lastName);
 console.log(oldLastName);
+//Reference types
+const jessica = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+};
+
+const marriedJessica = jessica;
+marriedJessica.lastName = 'Davis';
+console.log('Before marriage:', jessica);
+console.log('After marriage:', marriedJessica);
+
+// marriedJessica = {}; not working- different position.
+
+//Copying objects
+const jessica2 = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+};
+
+const jessicaCopy = Object.assign({}, jessica2);
+jessicaCopy.lastName = 'Davis';
+console.log('Before marriage:', jessica2);
+console.log('After marriage:', jessicaCopy);
