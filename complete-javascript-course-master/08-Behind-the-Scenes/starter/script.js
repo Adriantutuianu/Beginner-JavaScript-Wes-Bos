@@ -111,7 +111,7 @@ matilda.calcAge();
 
 const f = jonas.calcAge;
 f();
-*/
+
 // 98 Regular functions vs arrow functions
 const jonas = {
   firstName: 'Jonas',
@@ -125,3 +125,21 @@ const jonas = {
 }; //undefined
 jonas.greet();
 console.log(this.firstName);
+*/
+// 99.Primitives vs Objects
+
+let age = 30;
+let oldAge = age;
+age = 31;
+console.log(age);
+console.log(oldAge);
+
+const me = {
+  name: 'Jonas',
+  age: 30,
+};
+const friend = me;
+friend.age = 27;
+
+console.log('Friend:', friend);
+console.log('Me', me);
