@@ -125,7 +125,7 @@ const jonas = {
 }; //undefined
 jonas.greet();
 console.log(this.firstName);
-*/
+
 // 99.Primitives vs Objects
 
 let age = 30;
@@ -143,3 +143,9 @@ friend.age = 27;
 
 console.log('Friend:', friend);
 console.log('Me', me);
+*/
+let lastName = 'Williams';
+let oldLastName = lastName;
+lastName = 'Davies';
+console.log(lastName);
+console.log(oldLastName);
