@@ -44,8 +44,10 @@ console.log(arr);
 let [main, , secondary] = restaurant.categories;
 console.log(main, secondary);
 
-const temp = main;
-main = secondary;
-secondary = temp;
-console.log(main, secondary); //switch words
-// [secondary, main]
+// const temp = main;
+// main = secondary;
+// secondary = temp;
+// console.log(main, secondary); //switch words
+
+[main, secondary] = [secondary, main];
+console.log(main, secondary);
