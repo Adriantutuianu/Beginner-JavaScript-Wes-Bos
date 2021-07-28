@@ -38,3 +38,14 @@ const c = arr[2];
 const [x, y, z] = arr; //destructuring array
 
 console.log(x, y, z);
+
+console.log(arr);
+
+let [main, , secondary] = restaurant.categories;
+console.log(main, secondary);
+
+const temp = main;
+main = secondary;
+secondary = temp;
+console.log(main, secondary); //switch words
+// [secondary, main]
