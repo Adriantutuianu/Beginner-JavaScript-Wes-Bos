@@ -42,6 +42,9 @@ const {
 } = restaurant;
 
 console.log(restaurantName, hours, tags);
+
+const { menu = [], starterMenu: starters = [] } = restaurant;
+console.log(menu, starters);
 // 103. Destructuring arrays
 /*
 const arr = [2, 3, 4];
