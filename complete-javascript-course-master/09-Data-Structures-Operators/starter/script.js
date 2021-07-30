@@ -98,6 +98,10 @@ console.log(1, 2, 7, 8, 9); //similar
 const newMenu = [...restaurant.mainMenu, 'Gnocci'];
 console.log(newMenu);
 
+// Copy array
+
+const mainMenuCopy = [...restaurant.mainMenu];
+
 // 103. Destructuring arrays
 /*
 const arr = [2, 3, 4];
