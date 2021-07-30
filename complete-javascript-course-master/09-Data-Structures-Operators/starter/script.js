@@ -64,24 +64,24 @@ const {
   categories: tags,
 } = restaurant;
 
-console.log(restaurantName, hours, tags);
-//Default values
-const { menu = [], starterMenu: starters = [] } = restaurant;
-console.log(menu, starters);
+// console.log(restaurantName, hours, tags);
+// //Default values
+// const { menu = [], starterMenu: starters = [] } = restaurant;
+// console.log(menu, starters);
 
-// Mutating variables
-let a = 111;
-let b = 999;
-const obj = { a: 23, b: 7, c: 14 };
+// // Mutating variables
+// let a = 111;
+// let b = 999;
+// const obj = { a: 23, b: 7, c: 14 };
 
-({ a, b } = obj);
-console.log(a, b);
+// ({ a, b } = obj);
+// console.log(a, b);
 
-//Nested objects
-const {
-  fri: { open: o, close: c },
-} = openingHours;
-console.log(o, c);
+// //Nested objects
+// const {
+//   fri: { open: o, close: c },
+// } = openingHours;
+// console.log(o, c);
 
 // 105.The spread operator
 const arr = [7, 8, 9];
@@ -102,6 +102,10 @@ console.log(newMenu);
 
 const mainMenuCopy = [...restaurant.mainMenu];
 
+//Join 2 arrays
+
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+console.log(menu);
 // 103. Destructuring arrays
 /*
 const arr = [2, 3, 4];
