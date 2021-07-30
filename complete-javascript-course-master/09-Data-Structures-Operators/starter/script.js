@@ -91,6 +91,10 @@ console.log(badNewArr);
 const newArr = [1, 2, ...arr];
 console.log(newArr);
 
+// Log individual elements of this new aray
+console.log(...newArr);
+console.log(1, 2, 7, 8, 9); //similar
+
 // 103. Destructuring arrays
 /*
 const arr = [2, 3, 4];
