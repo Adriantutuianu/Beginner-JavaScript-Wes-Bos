@@ -95,6 +95,9 @@ console.log(newArr);
 console.log(...newArr);
 console.log(1, 2, 7, 8, 9); //similar
 
+const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+console.log(newMenu);
+
 // 103. Destructuring arrays
 /*
 const arr = [2, 3, 4];
