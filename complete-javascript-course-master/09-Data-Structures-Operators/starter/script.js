@@ -334,12 +334,13 @@ team1 > team2 && console.log('Team 2 is more likely to win');
 // 111.Enhanced Object Literals
 
 // 113.Looping Objects: Object keys, values and entries
-
+//Property NAMES
 const properties = Object.keys(openingHours);
 console.log(properties);
 
-console.log(`We are open on ${properties.length} days`);
+let openStr = `We are open on ${properties.length} days: `;
 
-for (const day of Object.keys(openingHours)) {
-  console.log(day);
+for (const day of properties) {
+  openStr += `${day}, `;
 }
+console.log(openStr);
