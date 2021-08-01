@@ -82,7 +82,7 @@ const {
 //   fri: { open: o, close: c },
 // } = openingHours;
 // console.log(o, c);
-
+/*
 // 105.The spread operator
 const arr = [7, 8, 9];
 const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
@@ -106,6 +106,7 @@ const mainMenuCopy = [...restaurant.mainMenu];
 
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 console.log(menu);
+*/
 // 103. Destructuring arrays
 /*
 const arr = [2, 3, 4];
@@ -144,3 +145,11 @@ console.log(i, j, k);
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
 */
+
+// 106. Rest pattern and parameters
+
+//Spread because on Right side of =
+const arr = [1, 2, ...[3, 4]];
+//Rest, because on Left side of =
+const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a, b, others);
