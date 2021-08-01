@@ -8,7 +8,7 @@ const flights =
 
 const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 
-const hours = {
+const openingHours = {
   [weekdays[3]]: {
     open: 12,
     close: 22,
@@ -30,7 +30,7 @@ const restaurant = {
   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
   // ES6 Enhanced  object literals
-  hours,
+  openingHours,
 
   order(starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
@@ -332,3 +332,14 @@ team1 > team2 && console.log('Team 2 is more likely to win');
 // // console.log([...menu.entries()]);
 
 // 111.Enhanced Object Literals
+
+// 113.Looping Objects: Object keys, values and entries
+
+const properties = Object.keys(openingHours);
+console.log(properties);
+
+console.log(`We are open on ${properties.length} days`);
+
+for (const day of Object.keys(openingHours)) {
+  console.log(day);
+}
