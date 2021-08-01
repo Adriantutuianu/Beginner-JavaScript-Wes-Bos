@@ -5,27 +5,31 @@ const flights =
   '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
 
 // Data needed for first part of the section
+
+const hours = {
+  thu: {
+    open: 12,
+    close: 22,
+  },
+  fri: {
+    open: 11,
+    close: 23,
+  },
+  sat: {
+    open: 0, // Open 24 hours
+    close: 24,
+  },
+};
+
 const restaurant = {
   name: 'Classico Italiano',
   location: 'Via Angelo Tavanti 23, Firenze, Italy',
   categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+  // ES6 Enhanced  object literals
+  hours,
 
-  openingHours: {
-    thu: {
-      open: 12,
-      close: 22,
-    },
-    fri: {
-      open: 11,
-      close: 23,
-    },
-    sat: {
-      open: 0, // Open 24 hours
-      close: 24,
-    },
-  },
   order: function (starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
@@ -36,9 +40,9 @@ const restaurant = {
     time = '20:00',
     address,
   }) {
-    console.log(
-      `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} and ${time}`
-    );
+    // console.log(
+    //   `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} and ${time}`
+    // );
   },
 };
 
@@ -55,14 +59,14 @@ restaurant.orderDelivery({
 });
 
 // 104.Destructuring objects
-const { name, openingHours, categories } = restaurant;
-console.log(name, openingHours, categories);
+// const { name, openingHours, categories } = restaurant;
+// console.log(name, openingHours, categories);
 
-const {
-  name: restaurantName,
-  openingHours: hours,
-  categories: tags,
-} = restaurant;
+// const {
+//   name: restaurantName,
+//   openingHours: hours,
+//   categories: tags,
+// } = restaurant;
 
 // console.log(restaurantName, hours, tags);
 // //Default values
@@ -320,12 +324,14 @@ team1 < team2 && console.log('Team 1 is more likely to win');
 team1 > team2 && console.log('Team 2 is more likely to win');
 */
 
-// 110. Looping Arrays: The for-of Loop;
-const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
-for (const item of menu) console.log(item);
+// // 110. Looping Arrays: The for-of Loop;
+// const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+// for (const item of menu) console.log(item);
 
-for (const [i, el] of menu.entries()) {
-  console.log(`${i + 1}: ${el}`);
-}
+// for (const [i, el] of menu.entries()) {
+//   console.log(`${i + 1}: ${el}`);
+// }
 
-// console.log([...menu.entries()]);
+// // console.log([...menu.entries()]);
+
+// 111.Enhanced Object Literals
