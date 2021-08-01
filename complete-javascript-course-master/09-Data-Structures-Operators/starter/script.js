@@ -348,3 +348,8 @@ console.log(openStr);
 //Property VALUES
 const values = Object.values(openingHours);
 console.log(values);
+
+//Property entries : Names + values together
+//Entire object
+const entries = Object.entries(openingHours);
+console.log(entries);
