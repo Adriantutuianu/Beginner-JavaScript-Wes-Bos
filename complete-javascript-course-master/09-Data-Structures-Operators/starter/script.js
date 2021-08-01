@@ -183,25 +183,34 @@ add(...x);
 */
 
 // 107 Short circuiting and operator , or operator- && ||
-console.log('---- OR ----');
-//Use any data type, return any data type, short circuiting
+// console.log('---- OR ----');
+// //Use any data type, return any data type, short circuiting
 
-console.log(6 || 'Jonas');
-console.log('' || 'Jonas');
-console.log(true || 0);
-console.log(undefined || null);
+// console.log(6 || 'Jonas');
+// console.log('' || 'Jonas');
+// console.log(true || 0);
+// console.log(undefined || null);
 
-console.log(undefined || 0 || '' || 'Hello' || 23 || null);
-// restaurant.numGuests = 0;
-const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
-console.log(guests1);
+// console.log(undefined || 0 || '' || 'Hello' || 23 || null);
+// // restaurant.numGuests = 0;
+// const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+// console.log(guests1);
 
-const guests2 = restaurant.numGuests || 10;
-console.log(guests2);
+// const guests2 = restaurant.numGuests || 10;
+// console.log(guests2);
 
-console.log('---- AND ----');
-// && is working opposite to ||
-console.log(0 && 'Jonas');
-console.log(7 && 'Jonas');
+// console.log('---- AND ----');
+// // && is working opposite to ||
+// console.log(0 && 'Jonas');
+// console.log(7 && 'Jonas');
 
-console.log('Hello' && 23 && null && 'Jonas');
+// console.log('Hello' && 23 && null && 'Jonas');
+
+// 108 The nullish coalescing operator (??)
+
+restaurant.numGuests = 0;
+const guests = restaurant.numGuests || 10;
+console.log(guests);
+//Nullish : null and undefined (NOT 0 or "")
+const guestsCorrect = restaurant.numGuests ?? 10;
+console.log(guestsCorrect);
