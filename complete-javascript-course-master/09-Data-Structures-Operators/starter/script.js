@@ -159,3 +159,8 @@ const [pizza, , risotto, ...otherFood] = [
   ...restaurant.starterMenu,
 ];
 console.log(pizza, otherFood);
+
+//Objects
+
+const { sat, ...weekDays } = restaurant.openingHours;
+console.log(weekDays);
