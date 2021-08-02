@@ -500,3 +500,8 @@ const question = new Map([
 ]);
 
 console.log(question);
+//Convert object to map
+console.log(Object.entries(openingHours));
+const hoursMap = new Map(Object.entries(openingHours));
+
+console.log(hoursMap);
