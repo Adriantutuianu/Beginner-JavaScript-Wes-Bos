@@ -519,3 +519,6 @@ console.log(answer);
 
 console.log(question.get(question.get('correct') === answer));
 3;
+
+//Convert map to an array
+console.log([...question]);
