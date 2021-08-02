@@ -408,7 +408,7 @@ for (const [team, odd] of Object.entries(game.odds)) {
 */
 
 // 115. Sets- a collection of unique values
-
+/*
 const ordersSet = new Set([
   'Pasta',
   'Pizza',
@@ -449,3 +449,9 @@ console.log(
 ); // different position- number
 
 console.log(new Set('adriantutuianu').size); // how many different letters are in a string
+*/
+
+// 116. Maps: Fundamentals
+// map is a data structure that we can use to map values to keys
+const rest = new Map();
+rest.set('name', 'Classico Italiano');
