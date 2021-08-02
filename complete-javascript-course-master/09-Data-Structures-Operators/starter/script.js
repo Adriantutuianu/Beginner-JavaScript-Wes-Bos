@@ -478,7 +478,7 @@ console.log(rest.get(time > rest.get('open') && time < rest.get('close')));
 console.log(rest.has('categories'));
 rest.delete(2);
 console.log(rest);
-
+// Use objects as map keys
 console.log(rest.size);
 // rest.clear();
 const arr = [1, 2];
@@ -487,3 +487,16 @@ console.log(rest);
 console.log(rest.size);
 
 console.log(rest.get(arr));
+
+// 117.Maps. Iteration
+const question = new Map([
+  ['question', 'What is the best programming language in the world?'],
+  [1, 'C'],
+  [2, 'Java'],
+  [3, 'JavaScript'],
+  ['correct', 3],
+  [true, 'Correct🛴'],
+  [false, 'Try again!'],
+]);
+
+console.log(question);
