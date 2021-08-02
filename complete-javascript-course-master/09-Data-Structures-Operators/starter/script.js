@@ -429,3 +429,7 @@ console.log(ordersSet.has('Bread')); //check if bread is there-false
 ordersSet.add('Garlic Bread');
 ordersSet.add('Garlic Bread');
 console.log(ordersSet);
+
+//Delete elements from a set
+ordersSet.delete('Risotto');
+console.log(ordersSet);
