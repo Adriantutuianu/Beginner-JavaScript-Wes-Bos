@@ -420,3 +420,12 @@ const ordersSet = new Set([
 console.log(ordersSet);
 
 console.log(new Set('Jonas'));
+
+console.log(ordersSet.size);
+console.log(ordersSet.has('Pizza')); //check if pizza is there-true
+console.log(ordersSet.has('Bread')); //check if bread is there-false
+
+//Add new elements to a set
+ordersSet.add('Garlic Bread');
+ordersSet.add('Garlic Bread');
+console.log(ordersSet);
