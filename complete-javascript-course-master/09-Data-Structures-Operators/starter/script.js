@@ -444,3 +444,8 @@ for (const order of ordersSet) console.log(order); //Looping
 const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
 const staffUnique = [...new Set(staff)];
 console.log(staffUnique);
+console.log(
+  new Set(['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter']).size
+); // different position- number
+
+console.log(new Set('adriantutuianu').size); // how many different letters are in a string
