@@ -433,3 +433,6 @@ console.log(ordersSet);
 //Delete elements from a set
 ordersSet.delete('Risotto');
 console.log(ordersSet);
+
+ordersSet.clear();
+console.log(ordersSet);
