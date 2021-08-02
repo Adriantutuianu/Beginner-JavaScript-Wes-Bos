@@ -474,3 +474,7 @@ console.log(rest.get(1));
 
 const time = 21; // check if it is open or closed
 console.log(rest.get(time > rest.get('open') && time < rest.get('close')));
+
+console.log(rest.has('categories'));
+rest.delete(2);
+console.log(rest);
