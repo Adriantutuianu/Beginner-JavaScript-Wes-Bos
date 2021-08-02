@@ -455,3 +455,13 @@ console.log(new Set('adriantutuianu').size); // how many different letters are i
 // map is a data structure that we can use to map values to keys
 const rest = new Map();
 rest.set('name', 'Classico Italiano');
+rest.set(1, 'Firenze, Italy');
+rest.set(2, 'Lisbon , Portugal');
+console.log(rest.set(2, 'Lisbon, Portugal'));
+
+rest
+  .set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
+  .set('open', 11)
+  .set('close', 23)
+  .set(true, 'We are open :D')
+  .set(false, 'We are closed :(');
