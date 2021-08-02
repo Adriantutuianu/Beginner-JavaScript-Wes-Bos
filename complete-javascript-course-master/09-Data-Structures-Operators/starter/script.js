@@ -465,3 +465,9 @@ rest
   .set('close', 23)
   .set(true, 'We are open :D')
   .set(false, 'We are closed :(');
+
+//Read data from a map - get method
+
+console.log(rest.get('name'));
+console.log(rest.get(true));
+console.log(rest.get(1));
