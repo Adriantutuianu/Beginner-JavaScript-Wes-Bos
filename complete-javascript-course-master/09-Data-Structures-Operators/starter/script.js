@@ -244,7 +244,7 @@ operator.
 Test data for 6.: First, use players 'Davies', 'Muller', 'Lewandowski' and 'Kimmich'.
 Then, call the function again with players from game.scored
 */
-
+/*
 const game = {
   team1: 'Bayern Munich',
   team2: 'Borrussia Dortmund',
@@ -319,7 +319,7 @@ printGoals(...game.scored);
 // 7
 team1 < team2 && console.log('Team 1 is more likely to win');
 team1 > team2 && console.log('Team 2 is more likely to win');
-
+*/
 // // 110. Looping Arrays: The for-of Loop;
 // const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 // for (const item of menu) console.log(item);
@@ -383,7 +383,7 @@ Hummels: 1,
 Lewandowski: 2
 }
 */
-
+/*
 // 1
 for (const [i, player] of game.scored.entries())
   console.log(`Goal ${i + 1}: ${player}`);
@@ -405,3 +405,18 @@ for (const [team, odd] of Object.entries(game.odds)) {
 // Odd of victory Bayern Munich: 1.33
 // Odd of draw: 3.25
 // Odd of victory Borrussia Dortmund: 6.5
+*/
+
+// 115. Sets- a collection of unique values
+
+const ordersSet = new Set([
+  'Pasta',
+  'Pizza',
+  'Pizza',
+  'Risotto',
+  'Pasta',
+  'Pizza',
+]);
+console.log(ordersSet);
+
+console.log(new Set('Jonas'));
