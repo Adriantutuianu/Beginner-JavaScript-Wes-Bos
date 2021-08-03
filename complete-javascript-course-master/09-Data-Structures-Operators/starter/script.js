@@ -541,7 +541,7 @@ whether it's in the first half or second half (after 45 min) of the game, like t
 [FIRST HALF] 17:
 ⚽
 GOAL
-*/
+
 
 const gameEvents = new Map([
   [17, '⚽ GOAL'],
@@ -575,3 +575,14 @@ for (const [min, event] of gameEvents) {
   const half = min <= 45 ? 'FIRST' : 'SECOND';
   console.log(`[${half} HALF] ${min}: ${event}`);
 }
+*/
+
+// 120 Working with strings
+const airline = 'TAP Air Portugal';
+const plane = 'A320';
+
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2]);
+
+console.log('B737'[0]);
