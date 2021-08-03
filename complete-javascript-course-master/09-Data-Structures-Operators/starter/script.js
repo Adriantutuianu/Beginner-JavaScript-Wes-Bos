@@ -598,3 +598,4 @@ console.log(airline.lastIndexOf('r')); //position -last
 //Extract part of a string
 
 console.log(airline.slice(4));
+console.log(airline.slice(4, 7)); //Start and finish
