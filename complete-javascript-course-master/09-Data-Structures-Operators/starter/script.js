@@ -602,3 +602,5 @@ console.log(airline.slice(4, 7)); //Start and finish
 
 console.log(airline.slice(0, airline.indexOf(' ')));
 console.log(airline.slice(airline.lastIndexOf(' ')));
+
+console.log(airline.slice(-2)); //Negative value - it starts from the end
