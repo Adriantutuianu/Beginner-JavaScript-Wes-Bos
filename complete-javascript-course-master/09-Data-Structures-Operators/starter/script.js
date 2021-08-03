@@ -592,3 +592,4 @@ console.log('B737'.length);
 
 // Methods
 console.log(airline.indexOf('r')); //position of a letter
+console.log(airline.lastIndexOf('r')); //position -last
