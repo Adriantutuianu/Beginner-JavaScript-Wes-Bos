@@ -599,3 +599,6 @@ console.log(airline.lastIndexOf('r')); //position -last
 
 console.log(airline.slice(4));
 console.log(airline.slice(4, 7)); //Start and finish
+
+console.log(airline.slice(0, airline.indexOf(' ')));
+console.log(airline.slice(airline.lastIndexOf(' ')));
