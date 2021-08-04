@@ -657,3 +657,6 @@ console.log(announcement.replaceAll('door', 'gate'));
 const plane2 = 'A320neo';
 console.log(plane2.includes('A320'));
 console.log(plane2.includes('Boeing'));
+
+//Startwith
+console.log(plane2.startsWith('A3'));
