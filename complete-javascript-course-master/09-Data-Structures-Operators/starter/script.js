@@ -651,3 +651,9 @@ const announcement =
   'All passangers come to boarding door 23.Boarding door 23!';
 
 console.log(announcement.replaceAll('door', 'gate'));
+
+//Booleans return
+
+const plane2 = 'A320neo';
+console.log(plane2.includes('A320'));
+console.log(plane2.includes('Boeing'));
