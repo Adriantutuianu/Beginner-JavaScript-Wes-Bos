@@ -615,3 +615,8 @@ const checkMiddleSeat = function (seat) {
 checkMiddleSeat('11B');
 checkMiddleSeat('23C');
 checkMiddleSeat('3E');
+
+// String methods
+//For changing the case of a string
+console.log(airline.toLowerCase());
+console.log(airline.toUpperCase());
