@@ -660,3 +660,6 @@ console.log(plane2.includes('Boeing'));
 
 //Startwith
 console.log(plane2.startsWith('A3'));
+
+//Split method
+console.log('a+very+nice+string'.split('+'));
