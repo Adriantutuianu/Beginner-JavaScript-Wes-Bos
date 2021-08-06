@@ -685,3 +685,14 @@ capitalizeName('adrian tutuianu');
 const message = 'GO to gate 23!';
 console.log(message.padStart(25, '+').padEnd(35, '='));
 console.log('Jonas'.padStart(25, '+'));
+
+// Padding example
+
+const maskCreditCard = function (number) {
+  const str = number + ''; //number as a string
+  const last = str.slice(-4);
+  return last.padStart(str.length, '*');
+};
+
+console.log(maskCreditCard(432353463545342));
+console.log(maskCreditCard('4362437837723632672'));
