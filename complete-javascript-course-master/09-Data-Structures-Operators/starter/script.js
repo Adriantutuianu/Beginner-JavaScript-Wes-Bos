@@ -665,6 +665,18 @@ console.log(plane2.startsWith('A3'));
 console.log('a+very+nice+string'.split('+'));
 
 const [firstName, lastName] = 'Adrian Tutuianu'.split(' ');
+// Split and join
 
 const newName = ['Mr.', firstName, lastName.toUpperCase()].join(' ');
 console.log(newName);
+
+const capitalizeName = function (name) {
+  const names = name.split(' ');
+  const namesUpper = [];
+  for (const n of names) {
+    namesUpper.push(n[0].toUpperCase() + n.slice(1));
+  }
+  console.log(namesUpper.join(' '));
+};
+capitalizeName('jessica and smith davis');
+capitalizeName('adrian tutuianu');
