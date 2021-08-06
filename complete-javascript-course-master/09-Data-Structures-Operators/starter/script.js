@@ -663,3 +663,8 @@ console.log(plane2.startsWith('A3'));
 
 //Split method
 console.log('a+very+nice+string'.split('+'));
+
+const [firstName, lastName] = 'Adrian Tutuianu'.split(' ');
+
+const newName = ['Mr.', firstName, lastName.toUpperCase()].join(' ');
+console.log(newName);
