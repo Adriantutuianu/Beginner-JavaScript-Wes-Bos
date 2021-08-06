@@ -734,7 +734,7 @@ Hints:
 name conversion working 😉
 § This challenge is difficult on purpose, so start watching the solution in case
 you're stuck. Then pause and continue.
-*/
+
 
 document.body.append(document.createElement('textarea'));
 document.body.append(document.createElement('button'));
@@ -754,3 +754,4 @@ document.querySelector('button').addEventListener('click', function () {
     console.log(output);
   }
 });
+*/
