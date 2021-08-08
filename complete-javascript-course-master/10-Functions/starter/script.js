@@ -23,7 +23,7 @@ createBooking('LH123', 2, 800);
 createBooking('LH123, ', 2);
 createBooking('LH123, ', 5);
 */
-
+/*
 // 128.How Passing Arguments Works:
 // value vs reference
 const flight = 'LH234';
@@ -54,3 +54,10 @@ const newPassport = function (person) {
 
 newPassport(jonas);
 checkIn(flight, jonas);
+
+*/
+// 129. First class and higher order functions
+//First class functions
+// -JS treats functions as first class citizens
+// - functions are simply values
+// -functions are just another type of object
