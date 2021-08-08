@@ -1,6 +1,6 @@
 'use strict';
 //Functions
-
+/*
 //Default parameters
 const bookings = [];
 
@@ -22,3 +22,28 @@ createBooking('LH123');
 createBooking('LH123', 2, 800);
 createBooking('LH123, ', 2);
 createBooking('LH123, ', 5);
+*/
+
+// 128.How Passing Arguments Works:
+// value vs reference
+const flight = 'LH234';
+const jonas = {
+  name: 'Adrian Tutuianu',
+  passport: 3262372527,
+};
+
+//check in function- flight number changed
+const checkIn = function (flightNum, passenger) {
+  flightNum = 'LH999';
+  passenger.name = 'Mr. ' + passenger.name;
+
+  if (passenger.passport === 3262372527) {
+    alert('Check in');
+  } else {
+    alert('Wrong passport!');
+  }
+};
+
+checkIn(flight, jonas);
+console.log(flight);
+console.log(jonas);
