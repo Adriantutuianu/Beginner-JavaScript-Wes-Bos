@@ -86,3 +86,5 @@ const transformer = function (str, fn) {
 };
 
 transformer('JavaScript is the best!', upperfirstWord);
+
+transformer('JavaScript is the best!', oneWord);
