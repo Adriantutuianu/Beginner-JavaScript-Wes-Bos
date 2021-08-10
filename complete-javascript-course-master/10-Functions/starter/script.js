@@ -68,7 +68,7 @@ checkIn(flight, jonas);
 // This is only posible because of first class functions.
 
 // 130. Functions accepting callback functions
-
+/*
 const oneWord = function (str) {
   return str.replace(/ /g, '').toLowerCase();
 };
@@ -88,3 +88,13 @@ const transformer = function (str, fn) {
 transformer('JavaScript is the best!', upperfirstWord);
 
 transformer('JavaScript is the best!', oneWord);
+*/
+// 131.Functions Returning functions
+const greet = function (greeting) {
+  return function (name) {
+    console.log(`${greeting} ${name}`);
+  };
+};
+const greeterHey = greet('Hey');
+greeterHey('Jonas');
+greeterHey('Steven');
