@@ -104,7 +104,7 @@ const greetArr = greeting => name => console.log(`${greeting} ${name}`);
 greetArr('Hi')('Jonas');
 */
 // 132.The call and apply methods
-
+/*
 const lufthansa = {
   airline: 'Lufthansa',
   iataCode: 'LH',
@@ -113,7 +113,29 @@ const lufthansa = {
     console.log(
       `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
     );
+    this.bookings.push({ flight: `${this.iataCode}${flightNum}`, name });
   },
 };
 lufthansa.book(239, 'Jonas Smith');
 lufthansa.book(3424, 'Chris Smith');
+console.log(lufthansa);
+
+const eurowings = {
+  name: 'Eurowings',
+  iataCode: 'EW',
+  bookings: [],
+};
+
+const book = lufthansa.book;
+*/
+// 135. Immediately invoked function expression
+// A function that dissapear once it was called once
+
+const runOnce = function () {
+  console.log('This will never run again');
+};
+runOnce();
+
+(function () {
+  console.log('This will never run again');
+})();
