@@ -66,3 +66,14 @@ checkIn(flight, jonas);
 //A function that receives another function as an argument , that returns
 // a new function , or both.
 // This is only posible because of first class functions.
+
+// 130. Functions accepting callback functions
+
+const oneWord = function (str) {
+  return str.replace(/ /g, '').toLowerCase();
+};
+
+const upperfirstWord = function (str) {
+  const [first, ...others] = str.split(' ');
+  return [first.toUpperCase(), ...others].join(' ');
+};
