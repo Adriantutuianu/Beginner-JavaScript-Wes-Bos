@@ -87,3 +87,8 @@ console.log(arr.slice(2, 4)); // c , d
 console.log(arr.slice(-2)); //d, e
 console.log(arr.slice(-1)); // e
 console.log(arr.slice(1, -2)); // b, c
+
+//Splice method
+
+console.log(arr.splice(2));
+console.log(arr); // extracted elements are gone
