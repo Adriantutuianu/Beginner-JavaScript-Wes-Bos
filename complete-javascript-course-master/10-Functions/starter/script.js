@@ -156,6 +156,8 @@ const secureBooking = function () {
 };
 const booker = secureBooking();
 
-booker();
-booker();
-booker();
+booker(); //1 passenger
+booker(); //2 passengers
+booker(); //3 passengers
+
+console.dir(booker);
