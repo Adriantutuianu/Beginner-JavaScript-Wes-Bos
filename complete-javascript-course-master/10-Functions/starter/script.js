@@ -127,7 +127,7 @@ const eurowings = {
 };
 
 const book = lufthansa.book;
-*/
+
 // 135. Immediately invoked function expression
 // A function that dissapear once it was called once
 
@@ -138,6 +138,24 @@ runOnce();
 
 (function () {
   console.log('This will never run again');
+  const isPrivate = 23;
 })();
+
 //Arrow function
 (() => console.log('This will ALSO never run again'))();
+*/
+// Closure
+
+const secureBooking = function () {
+  let passengerCount = 0;
+
+  return function () {
+    passengerCount++;
+    console.log(`${passengerCount} passengers`);
+  };
+};
+const booker = secureBooking();
+
+booker();
+booker();
+booker();
