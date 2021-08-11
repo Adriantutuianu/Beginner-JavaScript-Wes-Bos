@@ -100,3 +100,9 @@ console.log(arr); // extracted elements are gone
 arr = ['a', 'b', 'c', 'd', 'e'];
 const arr2 = ['j', 'i', 'h', 'g', 'f'];
 console.log(arr2.reverse());
+console.log(arr2);
+
+//Concat method
+
+const letters = arr.concat(arr2);
+console.log(letters);
