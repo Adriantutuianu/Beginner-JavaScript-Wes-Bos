@@ -74,3 +74,12 @@ const currencies = new Map([
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
+
+// 141 Simple Array Methods
+
+let arr = ['a', 'b', 'c', 'd', 'e'];
+
+// The slice method
+// We can extract part of any array witout changing the original array
+
+console.log(arr.slice(2));
