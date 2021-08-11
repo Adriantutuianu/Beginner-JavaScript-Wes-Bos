@@ -83,3 +83,7 @@ let arr = ['a', 'b', 'c', 'd', 'e'];
 // We can extract part of any array witout changing the original array
 
 console.log(arr.slice(2));
+console.log(arr.slice(2, 4)); // c , d
+console.log(arr.slice(-2)); //d, e
+console.log(arr.slice(-1)); // e
+console.log(arr.slice(1, -2)); // b, c
