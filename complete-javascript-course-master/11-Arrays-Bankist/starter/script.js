@@ -94,3 +94,9 @@ console.log(arr.slice(1, -2)); // b, c
 arr.splice(-1);
 arr.splice(1, 2);
 console.log(arr); // extracted elements are gone
+
+//Reverse method
+
+arr = ['a', 'b', 'c', 'd', 'e'];
+const arr2 = ['j', 'i', 'h', 'g', 'f'];
+console.log(arr2.reverse());
