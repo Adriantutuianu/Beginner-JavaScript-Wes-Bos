@@ -129,7 +129,7 @@ movements.forEach(function (mov, i, arr) {
     console.log(`Movement ${i + 1}: You withdrew ${Math.abs(mov)}`);
   }
 });
-*/
+
 
 // 143.forEach with maps and sets
 //Maps
@@ -151,3 +151,4 @@ console.log(currenciesUnique);
 currenciesUnique.forEach(function (value, key, map) {
   console.log(`${key}: ${value}`);
 });
+*/
