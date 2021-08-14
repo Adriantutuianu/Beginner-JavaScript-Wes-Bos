@@ -264,7 +264,7 @@ const createUsernames = function (accs) {
 
 createUsernames(accounts);
 console.log(accounts);
-*/
+
 
 // 150.The filter method
 const deposits = movements.filter(function (mov) {
@@ -282,3 +282,13 @@ const withdrawals = movements.filter(function (mov) {
   return mov < 0;
 });
 console.log(withdrawals);
+*/
+
+// 151. The reduce method
+
+console.log(movements);
+//accumulator is like SNOWBALL
+const balance = movements.reduce(function (acc, cur, i, arr) {
+  return acc + cur;
+}, 0);
+console.log(balance);
