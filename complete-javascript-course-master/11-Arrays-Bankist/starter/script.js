@@ -83,7 +83,7 @@ displayMovements(account1.movements);
 /////////////////////////////////////////////////
 // LECTURES
 */
-// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
 /*
@@ -248,7 +248,7 @@ const movementsDescriptions = movements.map((mov, i, arr) => {
   }
 });
 console.log(movementsDescriptions);
-*/
+
 
 // 149 . Computing usernames
 
@@ -264,3 +264,12 @@ const createUsernames = function (accs) {
 
 createUsernames(accounts);
 console.log(accounts);
+*/
+
+// 150.The filter method
+const deposits = movements.filter(function (mov) {
+  //Filter out negative values
+  return mov > 0;
+});
+console.log(movements);
+console.log(deposits);
