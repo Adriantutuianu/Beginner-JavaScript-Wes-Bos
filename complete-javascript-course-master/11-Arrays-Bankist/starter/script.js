@@ -233,3 +233,7 @@ const movementsUsd = movements.map(function (mov) {
 });
 
 console.log(movements, movementsUsd);
+//Similar
+const movementsUsdfor = [];
+for (const mov of movements) movementsUsdfor.push(mov * eurToUsd);
+console.log(movementsUsdfor);
