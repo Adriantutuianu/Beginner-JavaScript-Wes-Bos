@@ -203,5 +203,7 @@ const checkDogs = function (dogsJulia, dogsKate) {
   dogsJuliaCorrected.splice(0, 1);
   dogsJuliaCorrected.splice(-2);
   console.log(dogsJuliaCorrected);
+  const dogs = dogsJuliaCorrected.concat(dogsKate);
+  console.log(dogs);
 };
 checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3]);
