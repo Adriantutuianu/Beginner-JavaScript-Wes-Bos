@@ -289,6 +289,13 @@ console.log(withdrawals);
 console.log(movements);
 //accumulator is like SNOWBALL
 const balance = movements.reduce(function (acc, cur, i, arr) {
+  console.log(`Iteration ${i}: ${acc}`);
   return acc + cur;
-}, 0);
+}, 100); //start-100
 console.log(balance);
+
+const calcDisplayBalance = function (movements) {
+  const balance = movements.reduce((acc, mov) => acc + mov, 0);
+  labelBalance.textContent = `${balance} EUR`;
+};
+calcDisplayBalance(account1.movements);
