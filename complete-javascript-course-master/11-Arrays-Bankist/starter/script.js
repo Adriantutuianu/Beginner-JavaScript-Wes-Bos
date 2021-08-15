@@ -369,6 +369,14 @@ console.log(movements);
 console.log(firstWithdrawal);
 
 // 155. Implementing login
+
+const updateUI = function (acc) {
+  //Display movements
+  displayMovements(currentAccount.movements);
+
+  //Display balance
+  calcDisplayBalance(currentAccount);
+};
 // Event handlers
 let currentAccount;
 
@@ -392,11 +400,7 @@ btnLogin.addEventListener('click', function (e) {
     // Clear input fields
     // inputLoginUsername = inputLoginPin.value = '';
 
-    //Display movements
-    displayMovements(currentAccount.movements);
-
-    //Display balance
-    calcDisplayBalance(currentAccount);
+    updateUI(currentAccount);
   }
 });
 
@@ -411,9 +415,16 @@ btnTransfer.addEventListener('click', function (e) {
 
   if (
     amount > 0 &&
+    receiverAcc.acc &&
     currentAccount.balance >= amount &&
     receiverAcc?.username !== currentAccount.username
   ) {
     console.log('Transfer valid');
   }
+  // Doing the transfer
+
+  currentAccount.movements.push(-amount);
+  receiverAcc.movements.push(amount);
+
+  updateUI(currentAccount);
 });
