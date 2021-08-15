@@ -77,7 +77,6 @@ const displayMovements = function (movements) {
     containerMovements.insertAdjacentHTML('afterbegin', html);
   });
 };
-displayMovements(account1.movements);
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
@@ -288,7 +287,6 @@ const calcDisplayBalance = function (movements) {
   const balance = movements.reduce((acc, mov) => acc + mov, 0);
   labelBalance.textContent = `${balance} EUR`;
 };
-calcDisplayBalance(account1.movements);
 
 //Maximum value of movements array - 3000
 const max = movements.reduce((acc, mov) => {
@@ -390,10 +388,11 @@ btnLogin.addEventListener('click', function (e) {
       currentAccount.owner.split(' ')[0]
     }`;
     containerApp.style.opacity = 100;
+
     //Display movements
+    displayMovements(currentAccount.movements);
 
     //Display balance
-
-    //Display summary
+    calcDisplayBalance(currentAccount.movements);
   }
 });
