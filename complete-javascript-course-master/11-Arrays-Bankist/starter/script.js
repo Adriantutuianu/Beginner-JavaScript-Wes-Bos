@@ -389,6 +389,9 @@ btnLogin.addEventListener('click', function (e) {
     }`;
     containerApp.style.opacity = 100;
 
+    // Clear input fields
+    inputLoginUsername = inputLoginPin.value = '';
+
     //Display movements
     displayMovements(currentAccount.movements);
 
