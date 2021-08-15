@@ -60,7 +60,7 @@ const inputTransferAmount = document.querySelector('.form__input--amount');
 const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
-/*
+
 const displayMovements = function (movements) {
   containerMovements.innerHTML = '';
 
@@ -82,7 +82,7 @@ displayMovements(account1.movements);
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
-*/
+
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
@@ -125,10 +125,8 @@ console.log([...arr, ...arr2]); //similar
 
 console.log(letters.join(' - '));
 */
-
-// 142. Looping for arrays. forEach
 /*
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// 142. Looping for arrays. forEach
 
 // for (const movement of movements) {
 for (const [i, movement] of movements.entries()) {
@@ -147,8 +145,7 @@ movements.forEach(function (mov, i, arr) {
     console.log(`Movement ${i + 1}: You withdrew ${Math.abs(mov)}`);
   }
 });
-
-
+*/
 // 143.forEach with maps and sets
 //Maps
 const currencies = new Map([
@@ -169,7 +166,6 @@ console.log(currenciesUnique);
 currenciesUnique.forEach(function (value, key, map) {
   console.log(`${key}: ${value}`);
 });
-*/
 
 /*
 Coding Challenge #1
@@ -223,8 +219,6 @@ checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3]);
 //The map method
 
 //Loop over arrays- will give a brand new array
-/*
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 const eurToUsd = 1.1;
 
@@ -249,7 +243,6 @@ const movementsDescriptions = movements.map((mov, i, arr) => {
 });
 console.log(movementsDescriptions);
 
-
 // 149 . Computing usernames
 
 const createUsernames = function (accs) {
@@ -263,8 +256,6 @@ const createUsernames = function (accs) {
 };
 
 createUsernames(accounts);
-console.log(accounts);
-
 
 // 150.The filter method
 const deposits = movements.filter(function (mov) {
@@ -282,10 +273,9 @@ const withdrawals = movements.filter(function (mov) {
   return mov < 0;
 });
 console.log(withdrawals);
-*/
 
 // 151. The reduce method
-/*
+
 console.log(movements);
 //accumulator is like SNOWBALL
 const balance = movements.reduce(function (acc, cur, i, arr) {
@@ -306,7 +296,6 @@ const max = movements.reduce((acc, mov) => {
   else return mov;
 }, movements[0]);
 console.log(max);
-*/
 
 /*
 Coding Challenge #2
@@ -344,17 +333,17 @@ const avg1 = calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
 const avg2 = calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]);
 
 console.log(avg1, avg2);
-
+*/
 
 // 153. Chaining method
-const eurToUsd = 1.1;
+// const eurToUsd = 1.1;
 //Pipeline
 const totalDepositsUSD = movements
   .filter(mov => mov > 0)
   .map(mov => mov * eurToUsd)
   .reduce((acc, mov) => acc + mov, 0);
 console.log(totalDepositsUSD);
-*/
+
 // Coding challenge 3
 
 // Rewrite the 'calcAverageHumanAge' function from Challenge #2, but this time
@@ -373,22 +362,24 @@ const avg1 = calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
 const avg2 = calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]);
 
 console.log(avg1, avg2);
-
-
+*/
 // 155 The find method
 //Retrieve an element of an array based on a condition
 //Return first element in the array that satisfies the condition
 const firstWithdrawal = movements.find(mov => mov < 0);
 console.log(movements);
 console.log(firstWithdrawal);
-*/
 
 // 155. Implementing login
 // Event handlers
+let currentAccount;
 
 btnLogin.addEventListener('click', function (e) {
-  //Prevent form from submitting
+  // Prevent form from submitting
   e.preventDefault();
 
-  console.log('LOGIN');
+  currentAccount = accounts.find(
+    acc => acc.username === inputLoginUsername.value
+  );
+  console.log(currentAccount);
 });
