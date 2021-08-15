@@ -385,6 +385,15 @@ btnLogin.addEventListener('click', function (e) {
   // Check if pin is correct
 
   if (currentAccount?.pin === Number(inputLoginPin.value)) {
-    console.log('LOGIN');
+    // Display UI and  message
+    labelWelcome.textContent = `Welcome back, ${
+      currentAccount.owner.split(' ')[0]
+    }`;
+    containerApp.style.opacity = 100;
+    //Display movements
+
+    //Display balance
+
+    //Display summary
   }
 });
