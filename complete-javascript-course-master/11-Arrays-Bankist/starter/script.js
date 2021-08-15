@@ -390,7 +390,7 @@ btnLogin.addEventListener('click', function (e) {
     containerApp.style.opacity = 100;
 
     // Clear input fields
-    inputLoginUsername = inputLoginPin.value = '';
+    // inputLoginUsername = inputLoginPin.value = '';
 
     //Display movements
     displayMovements(currentAccount.movements);
@@ -398,4 +398,14 @@ btnLogin.addEventListener('click', function (e) {
     //Display balance
     calcDisplayBalance(currentAccount.movements);
   }
+});
+
+// 157.Implementing transfers
+btnTransfer.addEventListener('click', function (e) {
+  e.preventDefault();
+  const amount = Number(inputTransferAmount.value);
+  const receiverAcc = accounts.find(
+    acc => acc.username === inputTransferTo.value
+  );
+  console.log(amount, receiverAcc);
 });
