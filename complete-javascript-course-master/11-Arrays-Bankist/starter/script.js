@@ -444,3 +444,13 @@ btnClose.addEventListener('click', function (e) {
     // accounts.splice(index, 1);
   }
 });
+
+// 159.Some and every
+console.log(movements);
+//Equality
+console.log(movements.includes(-130));
+//Condition
+console.log(movements.some(mov => mov === -130));
+
+const anyDeposits = movements.some(mov => mov > 0);
+console.log(anyDeposits);
