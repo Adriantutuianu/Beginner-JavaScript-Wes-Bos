@@ -494,3 +494,13 @@ console.log(accountMovements);
 
 const allMovements = accountMovements.flat();
 console.log(allMovements);
+
+// 161. Sorting arrays
+//Strings
+const owners = ['Jonas', 'Zach', 'Adam', 'Martha'];
+console.log(owners.sort());
+console.log(owners);
+
+// Numbers
+console.log(movements);
+console.log(movements.sort());
