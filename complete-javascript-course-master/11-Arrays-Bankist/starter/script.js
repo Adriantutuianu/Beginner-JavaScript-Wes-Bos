@@ -428,3 +428,9 @@ btnTransfer.addEventListener('click', function (e) {
 
   updateUI(currentAccount);
 });
+
+// 158. The findIndex method
+btnClose.addEventListener('click', function (e) {
+  e.preventDefault();
+  console.log('Delete');
+});
