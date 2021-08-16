@@ -432,5 +432,15 @@ btnTransfer.addEventListener('click', function (e) {
 // 158. The findIndex method
 btnClose.addEventListener('click', function (e) {
   e.preventDefault();
-  console.log('Delete');
+  //Check if user and pin are correct
+  if (
+    inputCloseUsername.value === currentAccount.username &&
+    Number(inputClosePin.value) === currentAccount.pin
+  ) {
+    const index = accounts.findIndex(
+      acc => acc.username === currentAccount.username
+    );
+    console.log(index);
+    // accounts.splice(index, 1);
+  }
 });
