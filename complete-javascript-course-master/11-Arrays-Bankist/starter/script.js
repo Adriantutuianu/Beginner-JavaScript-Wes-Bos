@@ -468,3 +468,7 @@ btnLoan.addEventListener('click', function (e) {
   }
   inputLoanAmount.value = '';
 });
+
+//Every method
+
+console.log(movements.every(mov => mov > 0));
