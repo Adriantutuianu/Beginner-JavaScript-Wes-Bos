@@ -504,11 +504,16 @@ console.log(owners);
 // Numbers
 console.log(movements);
 
-//return <0 , A, B
-//return >0 , B, A
+//return <0 , A, B (keep order)
+//return >0 , B, A (switch order)
 movements.sort((a, b) => {
   if (a > b) return 1;
   if (b > a) return -1;
 });
 
 console.log(movements);
+
+// Array methods practice
+
+const bankDepositsSum = accounts.flatMap(acc => acc.movements);
+console.log(bankDepositsSum);
