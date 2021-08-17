@@ -515,5 +515,11 @@ console.log(movements);
 
 // Array methods practice
 
-const bankDepositsSum = accounts.flatMap(acc => acc.movements);
+// const bankDepositsSum = accounts.flatMap(acc => acc.movements);
+
+const bankDepositsSum = accounts
+  .flatMap(acc => acc.movements)
+  .filter(mov => mov > 0)
+  .reduce((sum, cur) => sum + cur, 0);
+
 console.log(bankDepositsSum);
