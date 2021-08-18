@@ -320,3 +320,9 @@ console.log(Math.floor(23.7)); //23
 
 console.log(Math.trunc(-23.3)); //-23
 console.log(Math.floor(-23.3)); //-24
+
+//rounding decimals
+
+console.log((2.7).toFixed(0)); //3- return a string
+console.log((2.7).toFixed(3)); //2.700
+console.log((2.34567).toFixed(2)); //2.35
