@@ -251,7 +251,7 @@ btnSort.addEventListener('click', function (e) {
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
-
+/*
 // 168.Converting and checking numbers
 console.log(23 === 23.0);
 
@@ -281,3 +281,9 @@ console.log(Number.isNaN(23 / 0)); //false
 console.log(Number.isFinite(20)); //true
 console.log(Number.isFinite('20')); //false
 console.log(Number.isFinite(23 / 0)); //false
+*/
+// 169 Math and rounding
+
+console.log(Math.sqrt(25)); //5
+console.log(25 ** 1 / 2); //12.5
+console.log(8 ** 1 / 3); //2.666666
