@@ -287,3 +287,9 @@ console.log(Number.isFinite(23 / 0)); //false
 console.log(Math.sqrt(25)); //5
 console.log(25 ** 1 / 2); //12.5
 console.log(8 ** 1 / 3); //2.666666
+
+console.log(Math.max(5, 18, 23, 11, 2));
+console.log(Math.max(5, 18, '23', 11, 2));
+// console.log(Math.max(5, 18, 23p, 11, 2)); not working
+
+console.log(Math.min(5, 18, 23, 11, 2));
