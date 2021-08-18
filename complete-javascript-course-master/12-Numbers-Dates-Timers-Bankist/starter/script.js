@@ -275,3 +275,9 @@ console.log(Number.isNaN('20')); //false
 console.log(Number.isNaN(+'20x')); //true
 
 console.log(Number.isNaN(23 / 0)); //false
+
+// isFinite
+//checking if value is a number
+console.log(Number.isFinite(20)); //true
+console.log(Number.isFinite('20')); //false
+console.log(Number.isFinite(23 / 0)); //false
