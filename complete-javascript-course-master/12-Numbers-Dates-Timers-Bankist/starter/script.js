@@ -269,3 +269,9 @@ console.log(+'23');
 console.log(Number.parseInt('30px', 10));
 console.log(Number.parseInt('2.5 rem'));
 console.log(Number.parseFloat('2,5 rem'));
+// isNaN - is not a number
+console.log(Number.isNaN(20)); //false
+console.log(Number.isNaN('20')); //false
+console.log(Number.isNaN(+'20x')); //true
+
+console.log(Number.isNaN(23 / 0)); //false
