@@ -264,3 +264,6 @@ console.log(0.1 + 0.2 === 0.3); //error in JS
 
 console.log(Number('23')); //string to a number
 console.log(+'23');
+
+//Parsing
+console.log(Number.parseInt('30px'));
