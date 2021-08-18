@@ -624,6 +624,7 @@ const checkEatingOkay = dog =>
 console.log(dogs.some(checkEatingOkay));
 
 // 7
+
 console.log(dogs.filter(checkEatingOkay));
 
 // 8

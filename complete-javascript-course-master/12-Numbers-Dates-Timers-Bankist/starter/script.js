@@ -251,3 +251,16 @@ btnSort.addEventListener('click', function (e) {
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
+
+// 168.Converting and checking numbers
+console.log(23 === 23.0);
+
+// Base 10 - 0 to 9
+// Binary base 2 - 0 1
+
+console.log(0.1 + 0.2);
+
+console.log(0.1 + 0.2 === 0.3); //error in JS
+
+console.log(Number('23')); //string to a number
+console.log(+'23');
