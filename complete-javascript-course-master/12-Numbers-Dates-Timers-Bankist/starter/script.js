@@ -266,4 +266,6 @@ console.log(Number('23')); //string to a number
 console.log(+'23');
 
 //Parsing
-console.log(Number.parseInt('30px'));
+console.log(Number.parseInt('30px', 10));
+console.log(Number.parseInt('2.5 rem'));
+console.log(Number.parseFloat('2,5 rem'));
