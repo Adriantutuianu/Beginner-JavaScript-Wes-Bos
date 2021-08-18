@@ -303,3 +303,20 @@ const randomInt = (min, max) =>
   Math.trunc(Math.random() * (max - min) + 1) + min;
 //0 ... 1 -> 0....(max- min) -> min ...max
 console.log(randomInt(10, 20));
+
+//rounding integers
+
+console.log(Math.trunc(23.3)); //remove decimals
+console.log(Math.trunc(23.7));
+
+console.log(Math.round(23.3)); //23
+console.log(Math.round(23.7)); //24
+
+console.log(Math.ceil(23.3)); //24
+console.log(Math.ceil(23.7)); //24
+
+console.log(Math.floor(23.3)); //23
+console.log(Math.floor(23.7)); //23
+
+console.log(Math.trunc(-23.3)); //-23
+console.log(Math.floor(-23.3)); //-24
