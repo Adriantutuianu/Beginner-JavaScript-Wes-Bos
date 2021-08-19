@@ -333,3 +333,8 @@ console.log(5 % 2); //1- remainder
 console.log(5 / 2); //5 = 2*2+1
 console.log(8 % 3); //2 - remainder
 console.log(9 % 3); //0 - remainder
+
+const isEven = n => n % 2 === 0;
+console.log(isEven(8));
+console.log(isEven(23));
+console.log(isEven(832));
