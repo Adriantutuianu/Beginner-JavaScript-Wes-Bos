@@ -342,3 +342,5 @@ console.log(isEven(832));
 // 171.Working with BIgInt
 console.log(2 ** 53 - 1);
 console.log(Number.MAX_SAFE_INTEGER);
+console.log(254326324623572574278427275726236n);
+console.log(BigInt(254326324623));
