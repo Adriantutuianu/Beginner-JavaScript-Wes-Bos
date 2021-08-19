@@ -352,3 +352,14 @@ console.log(10000n + 10000n);
 const huge = 231541643735724752n;
 const num = 23;
 console.log(huge * BigInt(num));
+
+// 172. Creating dates
+//Create a date
+
+const now = new Date();
+console.log(now);
+
+console.log(new Date('Aug 19 2021 12:04:00  '));
+console.log(new Date('December 20, 2015'));
+
+console.log(new Date(account1.movementsDates[0]));
