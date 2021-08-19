@@ -326,3 +326,10 @@ console.log(Math.floor(-23.3)); //-24
 console.log((2.7).toFixed(0)); //3- return a string
 console.log((2.7).toFixed(3)); //2.700
 console.log((2.34567).toFixed(2)); //2.35
+
+// 170.the remainder operator
+
+console.log(5 % 2); //1- remainder
+console.log(5 / 2); //5 = 2*2+1
+console.log(8 % 3); //2 - remainder
+console.log(9 % 3); //0 - remainder
