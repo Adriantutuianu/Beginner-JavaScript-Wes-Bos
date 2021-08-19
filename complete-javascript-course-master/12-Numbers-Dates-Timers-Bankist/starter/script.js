@@ -338,3 +338,7 @@ const isEven = n => n % 2 === 0;
 console.log(isEven(8));
 console.log(isEven(23));
 console.log(isEven(832));
+
+// 171.Working with BIgInt
+console.log(2 ** 53 - 1);
+console.log(Number.MAX_SAFE_INTEGER);
