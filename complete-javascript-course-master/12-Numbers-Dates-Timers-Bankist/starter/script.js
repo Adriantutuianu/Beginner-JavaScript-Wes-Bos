@@ -344,3 +344,11 @@ console.log(2 ** 53 - 1);
 console.log(Number.MAX_SAFE_INTEGER);
 console.log(254326324623572574278427275726236n);
 console.log(BigInt(254326324623));
+
+//Operations
+
+console.log(10000n + 10000n);
+
+const huge = 231541643735724752n;
+const num = 23;
+console.log(huge * BigInt(num));
