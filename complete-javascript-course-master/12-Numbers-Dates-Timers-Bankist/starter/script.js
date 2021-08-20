@@ -363,3 +363,14 @@ console.log(new Date('Aug 19 2021 12:04:00  '));
 console.log(new Date('December 20, 2015'));
 
 console.log(new Date(account1.movementsDates[0]));
+
+// 174.Operations with dates
+// Days between 2 dates
+const future = new Date(2037, 10, 19, 15, 23);
+console.log(+future);
+
+const calcDaysPassed = (date1, date2) =>
+  (date2 - date1) / (1000 * 60 * 60 * 24);
+
+const days1 = calcDaysPassed(new Date(2037, 3, 14), new Date(2037, 3, 24));
+console.log(days1);
