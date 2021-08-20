@@ -29,3 +29,13 @@ document.addEventListener('keydown', function (e) {
     closeModal();
   }
 });
+
+// 183.selecting , creating and delete elements
+
+console.log(document.documentElement);
+console.log(document.head);
+console.log(document.body);
+
+document.querySelector('.header');
+const allSelections = document.querySelectorAll('.section');
+console.log(allSelections);
