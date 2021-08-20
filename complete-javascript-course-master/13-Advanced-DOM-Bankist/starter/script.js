@@ -31,12 +31,12 @@ document.addEventListener('keydown', function (e) {
 });
 
 // 183.selecting , creating and delete elements
-
+//Selecting
 console.log(document.documentElement);
 console.log(document.head);
 console.log(document.body);
 
-document.querySelector('.header');
+const header = document.querySelector('.header');
 const allSelections = document.querySelectorAll('.section');
 console.log(allSelections);
 
@@ -45,3 +45,14 @@ const allButtons = document.getElementsByTagName('button');
 console.log(allButtons);
 
 document.getElementsByClassName('btn');
+
+//creating
+
+// .insertAdjacentHTML
+
+const message = document.createElement('div');
+message.classList.add('cookie-message');
+message.textContent = 'We use cookies for improved functionality';
+message.innerHTML =
+  'We use cookies for improved functionality. <button class ="btn btn--close-cookie">Got it!</button>';
+header.prepend(message);
