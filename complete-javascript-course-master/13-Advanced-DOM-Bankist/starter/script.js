@@ -70,3 +70,12 @@ document
   .addEventListener('click', function () {
     message.remove();
   });
+
+// 184. Styles , Attributes and Classes
+//Styles
+message.style.backgroundColor = '#37383d';
+message.style.width = '120%';
+
+console.log(message.style.backgroundColor);
+
+console.log(getComputedStyle(message));
