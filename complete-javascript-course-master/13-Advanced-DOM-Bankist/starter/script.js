@@ -39,3 +39,9 @@ console.log(document.body);
 document.querySelector('.header');
 const allSelections = document.querySelectorAll('.section');
 console.log(allSelections);
+
+document.getElementById('section--1');
+const allButtons = document.getElementsByTagName('button');
+console.log(allButtons);
+
+document.getElementsByClassName('btn');
