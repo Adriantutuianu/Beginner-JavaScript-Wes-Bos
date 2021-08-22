@@ -42,7 +42,7 @@ console.log(allSelections);
 
 document.getElementById('section--1');
 const allButtons = document.getElementsByTagName('button');
-console.log(allButtons);
+// console.log(allButtons);
 
 document.getElementsByClassName('btn');
 
@@ -78,4 +78,7 @@ message.style.width = '120%';
 
 console.log(message.style.backgroundColor);
 
-console.log(getComputedStyle(message));
+// console.log(getComputedStyle(message));
+console.log(getComputedStyle(message).color);
+
+document.documentElement.style.setProperty('--color-primary', 'orangered');
