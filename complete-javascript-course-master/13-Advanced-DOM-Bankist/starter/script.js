@@ -88,3 +88,11 @@ document.documentElement.style.setProperty('--color-primary', 'orangered');
 const logo = document.querySelector('.nav__logo');
 console.log(logo.alt);
 console.log(logo.src);
+
+// 186.Types of events and event handlers
+
+const h1 = document.querySelector('h1');
+
+h1.addEventListener('mouseenter', function (e) {
+  alert('addEventListener: Great! You are reading the heading');
+});
