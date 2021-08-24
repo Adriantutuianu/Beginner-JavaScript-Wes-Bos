@@ -91,12 +91,20 @@ console.log(logo.src);
 
 // 186.Types of events and event handlers
 
-const h1 = document.querySelector('h1');
+// const h1 = document.querySelector('h1');
 
 // h1.addEventListener('mouseenter', function (e) {
 //   alert('addEventListener: Great! You are reading the heading');
 // });
 
-h1.onmouseenter = function (e) {
-  alert('addEventListener: Great! You are reading the heading');
-};
+// h1.onmouseenter = function (e) {
+// alert('addEventListener: Great! You are reading the heading');
+// };
+
+//Dom traversing
+
+const h1 = document.querySelector('h1');
+
+//Going downwards: child
+
+console.log(h1.querySelectorAll('.highlight'));
