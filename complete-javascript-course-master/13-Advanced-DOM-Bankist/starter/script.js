@@ -116,3 +116,11 @@ console.log(h1.parentNode);
 console.log(h1.parentElement);
 
 h1.closest('.header').style.background = 'var(--gradient-secondary)';
+
+// Going sideways: siblings
+
+console.log(h1.previousElementSibling);
+console.log(h1.nextElementSibling);
+
+console.log(h1.previousSibling);
+console.log(h1.nextSibling);
