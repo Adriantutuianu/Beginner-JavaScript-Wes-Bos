@@ -59,3 +59,15 @@ class PersonCL {
 
 const jessica = new PersonCL('Jessica', 1996);
 console.log(jessica);
+
+jessica.calcAge();
+console.log(jessica.__proto__ === PersonCL.prototype); //true
+
+PersonCL.prototype.greet = function () {
+  console.log(`Hey ${this.firstName}`);
+};
+jessica.greet();
+
+// Classes are not hoisted
+// Classes are first class citizes
+// Classes are executed in strict mode
