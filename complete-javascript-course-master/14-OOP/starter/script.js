@@ -6,8 +6,13 @@
 // Constructor function and the new Operator
 
 const Person = function (firstName, birthYear) {
+  //  Instance properties
   this.firstName = firstName;
   this.birthYear = birthYear;
+  // never do this
+  //   this.calcAge = function () {
+  //     console.log(2037 - this.birthYear);
+  //   };
 };
 
 const jonas = new Person('Jonas', 1991);
@@ -22,3 +27,5 @@ const jack = new Person('Jack', 2000);
 
 console.log(matilda);
 console.log(jack);
+
+console.log(jonas instanceof Person);
