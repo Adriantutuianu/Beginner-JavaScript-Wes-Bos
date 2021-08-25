@@ -30,6 +30,14 @@ console.log(jack);
 
 console.log(jonas instanceof Person);
 
+// Static Methods
+
+Person.hey = function () {
+  console.log('Hey there!!✔');
+};
+
+Person.hey();
+
 //Prototypes
 console.log(Person.prototype);
 
