@@ -38,3 +38,6 @@ Person.prototype.calcAge = function () {
 };
 jonas.calcAge();
 matilda.calcAge();
+
+console.log(jonas.__proto__);
+console.log(jonas.__proto__ === Person.prototype);
