@@ -41,3 +41,21 @@ matilda.calcAge();
 
 console.log(jonas.__proto__);
 console.log(jonas.__proto__ === Person.prototype);
+
+// ES6 Classes
+// //class expresion
+// const PersonCL = class {};
+
+//class declaration
+class PersonCL {
+  constructor(firstName, birthYear) {
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+  }
+  calcAge() {
+    console.log(2037 - this.birthYear);
+  }
+}
+
+const jessica = new PersonCL('Jessica', 1996);
+console.log(jessica);
