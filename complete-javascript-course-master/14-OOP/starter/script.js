@@ -54,27 +54,27 @@
 // //class expresion
 // const PersonCL = class {};
 
-//class declaration
-class PersonCL {
-  constructor(firstName, birthYear) {
-    this.firstName = firstName;
-    this.birthYear = birthYear;
-  }
-  calcAge() {
-    console.log(2037 - this.birthYear);
-  }
-}
+// class declaration
+// class PersonCL {
+//   constructor(firstName, birthYear) {
+//     this.firstName = firstName;
+//     this.birthYear = birthYear;
+//   }
+//   calcAge() {
+//     console.log(2037 - this.birthYear);
+//   }
+// }
 
-const jessica = new PersonCL('Jessica', 1996);
-console.log(jessica);
+// const jessica = new PersonCL('Jessica', 1996);
+// console.log(jessica);
 
-jessica.calcAge();
-console.log(jessica.__proto__ === PersonCL.prototype); //true
+// jessica.calcAge();
+// console.log(jessica.__proto__ === PersonCL.prototype); //true
 
-PersonCL.prototype.greet = function () {
-  console.log(`Hey ${this.firstName}`);
-};
-jessica.greet();
+// PersonCL.prototype.greet = function () {
+//   console.log(`Hey ${this.firstName}`);
+// };
+// jessica.greet();
 
 // Classes are not hoisted
 // Classes are first class citizes
@@ -148,3 +148,22 @@ Student.prototype.introduce = function () {
 const mike = new Student('Mike', 2020, 'computer science.');
 console.log(mike);
 mike.introduce();
+
+//  Inheritance Between "Classes": ES6 Classes
+
+class PersonCL {
+  constructor(fullName, birthYear) {
+    this.fullName = fullName;
+    this.birthYear = birthYear;
+  }
+}
+class StudentCL extends PersonCL {
+  constructor(fullName, birthYear, course) {
+    //Always need to happen first!
+    super(fullName, birthYear);
+    this.course = course;
+  }
+}
+
+const martha = new StudentCL('Martha Jones', 2012, 'computer science');
+console.log(martha);
