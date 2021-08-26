@@ -184,12 +184,16 @@ class Account {
     this.locale = navigator.language;
     console.log(`Thanks for opening an account ${owner}`);
   }
+
+  // Public interface
   deposit(val) {
     this.movements.push(val);
+    return this;
   }
 
   withdraw(val) {
     this.deposit(-val);
+    return this;
   }
 }
 
@@ -199,4 +203,10 @@ const acc1 = new Account('Jonas', 'EUR', 1111);
 // acc1.movements.push(150);
 acc1.deposit(250);
 acc1.withdraw(140);
+
+console.log(acc1.pin);
+
+// Chaining Methods
+acc1.deposit(300).deposit(500).withdraw(35).withdraw(4000);
+
 console.log(acc1);
