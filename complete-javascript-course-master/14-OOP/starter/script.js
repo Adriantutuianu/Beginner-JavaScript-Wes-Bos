@@ -184,10 +184,19 @@ class Account {
     this.locale = navigator.language;
     console.log(`Thanks for opening an account ${owner}`);
   }
+  deposit(val) {
+    this.movements.push(val);
+  }
+
+  withdraw(val) {
+    this.deposit(-val);
+  }
 }
 
 const acc1 = new Account('Jonas', 'EUR', 1111);
-console.log(acc1);
 
-acc1.movements.push(250);
-acc1.movements.push(150);
+// acc1.movements.push(250);
+// acc1.movements.push(150);
+acc1.deposit(250);
+acc1.withdraw(140);
+console.log(acc1);
