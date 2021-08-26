@@ -163,7 +163,12 @@ class StudentCL extends PersonCL {
     super(fullName, birthYear);
     this.course = course;
   }
+  introduce() {
+    console.log(`My name is ${this.fullName} and I study ${this.course}`);
+  }
 }
 
 const martha = new StudentCL('Martha Jones', 2012, 'computer science');
 console.log(martha);
+
+martha.introduce();
