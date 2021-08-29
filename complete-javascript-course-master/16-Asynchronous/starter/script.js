@@ -106,16 +106,24 @@ console.log(request);
 
 // Consuming promises
 
+// const getCountryDAta = function (country) {
+//   fetch(`https://restcountries.eu/rest/v2/name/${country}`)
+//     .then(function (response) {
+//       console.log(response);
+//       return response.json();
+//     })
+//     .then(function (data) {
+//       console.log(data);
+//       renderCountry(data[0]);
+//     });
+// };
+
+// getCountryDAta('portugal');
+
 const getCountryDAta = function (country) {
   fetch(`https://restcountries.eu/rest/v2/name/${country}`)
-    .then(function (response) {
-      console.log(response);
-      return response.json();
-    })
-    .then(function (data) {
-      console.log(data);
-      renderCountry(data[0]);
-    });
+    .then(response => response.json())
+    .then(data => renderCountry(data[0]));
 };
 
 getCountryDAta('portugal');
