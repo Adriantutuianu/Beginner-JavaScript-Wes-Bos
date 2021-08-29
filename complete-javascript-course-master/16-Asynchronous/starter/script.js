@@ -99,3 +99,5 @@ getCountryAndNeighbour('usa');
 // similar
 const request = fetch('https://restcountries.eu/rest/v2/name/portugal');
 console.log(request);
+
+// Promise : an object that is used as a placeholder for the future result of an asynchronomous operations
