@@ -101,3 +101,5 @@ const request = fetch('https://restcountries.eu/rest/v2/name/portugal');
 console.log(request);
 
 // Promise : an object that is used as a placeholder for the future result of an asynchronomous operations
+// Promise : (less formal) Acontainer for an asynchronously delivered value
+//Promise- less formal: A container for a future value
