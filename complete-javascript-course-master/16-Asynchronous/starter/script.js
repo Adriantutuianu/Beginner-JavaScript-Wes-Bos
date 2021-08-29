@@ -107,11 +107,15 @@ console.log(request);
 // Consuming promises
 
 const getCountryDAta = function (country) {
-  fetch(`https://restcountries.eu/rest/v2/name/${country}`).then(function (
-    response
-  ) {
-    console.log(response);
-  });
+  fetch(`https://restcountries.eu/rest/v2/name/${country}`)
+    .then(function (response) {
+      console.log(response);
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+      renderCountry(data[0]);
+    });
 };
 
 getCountryDAta('portugal');
