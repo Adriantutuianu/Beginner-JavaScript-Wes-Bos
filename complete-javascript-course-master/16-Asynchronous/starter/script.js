@@ -66,7 +66,7 @@ const getCountryAndNeighbour = function (country) {
 
   request.addEventListener('load', function () {
     const [data] = JSON.parse(this.responseText);
-    console.log(data);
+    // console.log(data);
     //Render country 1
     renderCountry(data);
     //Get neighbour country (2)
@@ -80,7 +80,7 @@ const getCountryAndNeighbour = function (country) {
 
     request2.addEventListener('load', function () {
       const data2 = JSON.parse(this.responseText);
-      console.log(data2);
+      // console.log(data2);
 
       renderCountry(data2, 'neighbour');
     });
@@ -89,3 +89,13 @@ const getCountryAndNeighbour = function (country) {
 
 // getCountryAndNeighbour('portugal');
 getCountryAndNeighbour('usa');
+
+// Promises and The fetch API
+
+// const request = new XMLHttpRequest();
+// request.open('GET', `https://restcountries.eu/rest/v2/name/${country}`);
+// request.send();
+
+// similar
+const request = fetch('https://restcountries.eu/rest/v2/name/portugal');
+console.log(request);
