@@ -100,6 +100,18 @@ getCountryAndNeighbour('usa');
 const request = fetch('https://restcountries.eu/rest/v2/name/portugal');
 console.log(request);
 
-// Promise : an object that is used as a placeholder for the future result of an asynchronomous operations
-// Promise : (less formal) Acontainer for an asynchronously delivered value
+// Promise : An object that is used as a placeholder for the future result of an asynchronomous operations
+// Promise : (less formal) A container for an asynchronously delivered value
 //Promise- less formal: A container for a future value
+
+// Consuming promises
+
+const getCountryDAta = function (country) {
+  fetch(`https://restcountries.eu/rest/v2/name/${country}`).then(function (
+    response
+  ) {
+    console.log(response);
+  });
+};
+
+getCountryDAta('portugal');
