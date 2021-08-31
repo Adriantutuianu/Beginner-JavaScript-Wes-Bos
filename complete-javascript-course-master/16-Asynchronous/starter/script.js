@@ -88,7 +88,7 @@ const getCountryAndNeighbour = function (country) {
 };
 
 // getCountryAndNeighbour('portugal');
-getCountryAndNeighbour('usa');
+// getCountryAndNeighbour('usa');
 
 // Promises and The fetch API
 
@@ -97,8 +97,8 @@ getCountryAndNeighbour('usa');
 // request.send();
 
 // similar
-const request = fetch('https://restcountries.eu/rest/v2/name/portugal');
-console.log(request);
+// const request = fetch('https://restcountries.eu/rest/v2/name/portugal');
+// console.log(request);
 
 // Promise : An object that is used as a placeholder for the future result of an asynchronomous operations
 // Promise : (less formal) A container for an asynchronously delivered value
@@ -121,9 +121,19 @@ console.log(request);
 // getCountryDAta('portugal');
 
 const getCountryDAta = function (country) {
+  //  country 1
   fetch(`https://restcountries.eu/rest/v2/name/${country}`)
     .then(response => response.json())
-    .then(data => renderCountry(data[0]));
+    .then(data => {
+      renderCountry(data[0]);
+      const neighbour = data[0].borders[0];
+
+      if (!neighbour) return;
+      //  country 2
+      return fetch(`https://restcountries.eu/rest/v2/alpha/${neighbour}`);
+    })
+    .then(response => response.json())
+    .then(data => renderCountry(data, 'neighbour'));
 };
 
-getCountryDAta('portugal');
+getCountryDAta('germany');
