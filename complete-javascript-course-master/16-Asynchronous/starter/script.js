@@ -136,4 +136,17 @@ const getCountryDAta = function (country) {
     .then(data => renderCountry(data, 'neighbour'));
 };
 
-getCountryDAta('germany');
+getCountryDAta('portugal');
+
+// The Event Loop in practice
+
+console.log('Test start');
+setTimeout(() => console.log(' sec timer'), 0);
+Promise.resolve('Resolved promise 1').then(res => console.log(res));
+
+Promise.resolve('Resolve promise 2').then(res => {
+  for (let i = 0; i < 10000000000; i++) {}
+  console.log(res);
+});
+
+console.log('Test end');
