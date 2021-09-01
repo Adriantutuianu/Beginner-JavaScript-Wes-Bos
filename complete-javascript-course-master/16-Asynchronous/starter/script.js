@@ -163,11 +163,21 @@ getCountryDAta('portugal');
 
 // Consuming Promises with Async/ Await
 
-const whereAmI = async function (country) {
-  const res = await fetch(`https://restcountries.eu/rest/v2/name/${country}`);
-  const data = await res.json();
-  console.log(data);
-  renderCountry(data[0]);
-};
-whereAmI('portugal');
-console.log('FIRST');
+// const whereAmI = async function (country) {
+//   const res = await fetch(`https://restcountries.eu/rest/v2/name/${country}`);
+//   const data = await res.json();
+//   console.log(data);
+//   renderCountry(data[0]);
+// };
+// whereAmI('portugal');
+// console.log('FIRST');
+
+// Error Handling with try...catch
+
+try {
+  let y = 1;
+  const x = 2;
+  x = 3;
+} catch (err) {
+  alert(err.message);
+}
