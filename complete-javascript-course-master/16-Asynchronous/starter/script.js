@@ -119,7 +119,7 @@ const getCountryAndNeighbour = function (country) {
 // };
 
 // getCountryDAta('portugal');
-
+/*
 const getCountryDAta = function (country) {
   //  country 1
   fetch(`https://restcountries.eu/rest/v2/name/${country}`)
@@ -137,16 +137,26 @@ const getCountryDAta = function (country) {
 };
 
 getCountryDAta('portugal');
+*/
+// // The Event Loop in practice
 
-// The Event Loop in practice
+// console.log('Test start');
+// setTimeout(() => console.log(' sec timer'), 0);
+// Promise.resolve('Resolved promise 1').then(res => console.log(res));
 
-console.log('Test start');
-setTimeout(() => console.log(' sec timer'), 0);
-Promise.resolve('Resolved promise 1').then(res => console.log(res));
+// Promise.resolve('Resolve promise 2').then(res => {
+//   for (let i = 0; i < 10000000000; i++) {}
+//   console.log(res);
+// });
 
-Promise.resolve('Resolve promise 2').then(res => {
-  for (let i = 0; i < 10000000000; i++) {}
-  console.log(res);
+// console.log('Test end');
+
+const lotteryPromise = new Promise(function (resolve, reject) {
+  if (Math.random() >= 0.5) {
+    resolve('YOU WIN💸💸');
+  } else {
+    reject('YOU lost your money🏷🏷');
+  }
 });
 
-console.log('Test end');
+lotteryPromise.then(res => console.log(res)).catch(err => console.error(err));
