@@ -151,12 +151,21 @@ getCountryDAta('portugal');
 
 // console.log('Test end');
 
-const lotteryPromise = new Promise(function (resolve, reject) {
-  if (Math.random() >= 0.5) {
-    resolve('YOU WIN💸💸');
-  } else {
-    reject('YOU lost your money🏷🏷');
-  }
-});
+// const lotteryPromise = new Promise(function (resolve, reject) {
+//   if (Math.random() >= 0.5) {
+//     resolve('YOU WIN💸💸');
+//   } else {
+//     reject('YOU lost your money🏷🏷');
+//   }
+// });
 
-lotteryPromise.then(res => console.log(res)).catch(err => console.error(err));
+// lotteryPromise.then(res => console.log(res)).catch(err => console.error(err));
+
+// Consuming Promises with Async/ Await
+
+const whereAmI = async function (country) {
+  const res = await fetch(`https://restcountries.eu/rest/v2/alpha/${country}`);
+  console.log(res);
+};
+whereAmI('portugal');
+console.log('FIRST');
