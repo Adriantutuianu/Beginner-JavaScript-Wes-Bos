@@ -174,10 +174,10 @@ getCountryDAta('portugal');
 
 // Error Handling with try...catch
 
-try {
-  let y = 1;
-  const x = 2;
-  x = 3;
-} catch (err) {
-  alert(err.message);
-}
+// try {
+//   let y = 1;
+//   const x = 2;
+//   x = 3;
+// } catch (err) {
+//   alert(err.message);
+// }
