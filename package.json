@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Adriantutuianu/Beginner-JavaScript-Wes-Bos/issues"
   },
-  "homepage": "https://github.com/Adriantutuianu/Beginner-JavaScript-Wes-Bos#readme"
+  "homepage": "https://github.com/Adriantutuianu/Beginner-JavaScript-Wes-Bos#readme",
+  "dependencies": {
+    "leaflet": "^1.7.1"
+  }
 }
